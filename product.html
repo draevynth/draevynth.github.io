@@ -5,16 +5,19 @@
   <title>Product Details - DRAEVYNTH</title>
   <style>
     body { background-color: #0d0d0d; color: #fff; font-family: Arial; padding: 20px; }
-    .product-detail { max-width: 800px; margin: auto; background: #1a1a1a; padding: 20px; border-radius: 12px; }
-    h1 { color: #00ff99; }
+    .product-detail { max-width: 800px; margin: auto; background: #1a1a1a; padding: 20px; border-radius: 12px; text-align: center; }
+    h1 { color: #00ff99; margin-bottom: 20px; }
+    img { width: 100%; border-radius: 12px; margin-bottom: 20px; }
+    p { font-size: 18px; line-height: 1.6; }
+    button { padding: 10px 20px; background-color: #00ff99; color: #0d0d0d; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; margin-top: 20px; }
   </style>
 </head>
 <body>
   <div class="product-detail">
     <h1 id="productTitle">Product Title</h1>
-    <img id="productImage" src="" alt="Product Image" style="width:100%;border-radius:12px;margin:20px 0;">
+    <img id="productImage" src="" alt="Product Image">
     <p id="productDescription">Loading product description...</p>
-    <button onclick="window.history.back()" style="padding:10px 20px;background:#00ff99;color:#000;border:none;border-radius:8px;">Back</button>
+    <button onclick="window.history.back()">Go Back</button>
   </div>
 
   <script>
@@ -35,12 +38,12 @@
       'motivational-voice-pack': {
         title: 'Motivational Voice Pack',
         image: 'https://images.pexels.com/photos/8761621/pexels-photo-8761621.jpeg',
-        description: 'Get exclusive motivational voice packs to inspire your daily hustle.'
+        description: 'Exclusive motivational voice packs to inspire your business hustle.'
       },
       'content-blueprint': {
-        title: 'Content Blueprint',
+        title: 'DRAEVYNTH Content Blueprint',
         image: 'https://images.pexels.com/photos/5905707/pexels-photo-5905707.jpeg',
-        description: 'A ready-made content strategy blueprint for business growth.'
+        description: 'A ready-made content strategy blueprint for silent business growth.'
       },
       'make-money-course': {
         title: 'Make Money Online Course',
@@ -49,7 +52,7 @@
       }
     };
 
-    if(products[product]) {
+    if (products[product]) {
       document.getElementById('productTitle').innerText = products[product].title;
       document.getElementById('productImage').src = products[product].image;
       document.getElementById('productDescription').innerText = products[product].description;
