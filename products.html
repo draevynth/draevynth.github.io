@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details - DRAEVYNTH</title>
+  <style>
+    body { background-color: #0d0d0d; color: #fff; font-family: Arial; padding: 20px; }
+    .product-detail { max-width: 800px; margin: auto; background: #1a1a1a; padding: 20px; border-radius: 12px; }
+    h1 { color: #00ff99; }
+  </style>
+</head>
+<body>
+  <div class="product-detail">
+    <h1 id="productTitle">Product Title</h1>
+    <img id="productImage" src="" alt="Product Image" style="width:100%;border-radius:12px;margin:20px 0;">
+    <p id="productDescription">Loading product description...</p>
+    <button onclick="window.history.back()" style="padding:10px 20px;background:#00ff99;color:#000;border:none;border-radius:8px;">Back</button>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const product = params.get('product');
+
+    const products = {
+      'silent-branding-masterclass': {
+        title: 'Silent Branding Masterclass',
+        image: 'https://images.pexels.com/photos/6949416/pexels-photo-6949416.jpeg',
+        description: 'Learn how to build powerful brands silently using exclusive DRAEVYNTH strategies.'
+      },
+      'business-strategy-session': {
+        title: '1-on-1 Business Strategy Session',
+        image: 'https://images.pexels.com/photos/8349233/pexels-photo-8349233.jpeg',
+        description: 'A private strategy session tailored to your business growth.'
+      },
+      'motivational-voice-pack': {
+        title: 'Motivational Voice Pack',
+        image: 'https://images.pexels.com/photos/8761621/pexels-photo-8761621.jpeg',
+        description: 'Get exclusive motivational voice packs to inspire your daily hustle.'
+      },
+      'content-blueprint': {
+        title: 'Content Blueprint',
+        image: 'https://images.pexels.com/photos/5905707/pexels-photo-5905707.jpeg',
+        description: 'A ready-made content strategy blueprint for business growth.'
+      },
+      'make-money-course': {
+        title: 'Make Money Online Course',
+        image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg',
+        description: 'Step-by-step course on how to earn consistent income online.'
+      }
+    };
+
+    if(products[product]) {
+      document.getElementById('productTitle').innerText = products[product].title;
+      document.getElementById('productImage').src = products[product].image;
+      document.getElementById('productDescription').innerText = products[product].description;
+    } else {
+      document.querySelector('.product-detail').innerHTML = '<h1>Product Not Found</h1>';
+    }
+  </script>
+</body>
+</html>
