@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRAEVYNTH Official Website</title>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #0d0d0d;
+        color: #ffffff;
+    }
+
+    .hero-banner {
+        height: 100vh;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                    url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .overlay h1 {
+        font-size: 3rem;
+        color: #00ff99;
+        margin-bottom: 20px;
+    }
+
+    .overlay p {
+        font-size: 1.2rem;
+        color: #f5f5f5;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+        background-color: #00ff99;
+        color: #0d0d0d;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    .cta-button:hover {
+        background-color: #00cc7a;
+    }
+
+    .products-section {
+        padding: 60px 20px;
+        background-color: #0d0d0d;
+        text-align: center;
+    }
+
+    .products-section h2 {
+        color: #00ff99;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .product-card {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0,255,153,0.1);
+        text-align: center;
+    }
+
+    .product-card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .product-card h3 {
+        color: #ffffff;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .product-card p {
+        color: #cccccc;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .product-button {
+        padding: 10px 20px;
+        background-color: #00ff99;
+        color: #0d0d0d;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    .product-button:hover {
+        background-color: #00cc7a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Banner Section -->
+  <section class="hero-banner">
+    <div class="overlay">
+      <h1>DRAEVYNTH</h1>
+      <p>Silent Business Branding & Online Income Strategy</p>
+      <a href="#courses" class="cta-button">Explore Courses</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products-section" id="courses">
+    <h2>Our Products & Courses</h2>
+    <div class="products-grid">
+      
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Silent Branding Blueprint">
+        <h3>Silent Branding Blueprint</h3>
+        <p>A complete guide to build your brand silently and effectively.</p>
+        <a href="pre-order.html" class="product-button">Pre-Order Now</a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Online Income Strategy Course">
+        <h3>Online Income Strategy</h3>
+        <p>Learn how to monetize your skills & products with silent strategies.</p>
+        <a href="pre-order.html" class="product-button">Pre-Order Now</a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Custom Branded Products">
+        <h3>Custom Branded Products</h3>
+        <p>Premium branded shirts, caps & mugs designed for your business identity.</p>
+        <a href="order.html" class="product-button">Order Now</a>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
