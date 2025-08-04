@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Order Course - DRAEVYNTH</title>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+    <section class="section">
+        <h1>Pre-Order Your Course</h1>
+        <form id="paymentForm">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required><label for="email">Email Address</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required>
+
+        <button type="submit">Pre-Order ₦9,000</button>
+    </form>
+</section>
+
+<script>
+    const paymentForm = document.getElementById('paymentForm');
+    paymentForm.addEventListener("submit", payWithPaystack, false);
+
+    function payWithPaystack(e) {
+        e.preventDefault();
+
+        let handler = PaystackPop.setup({
+            key: 'pk_test_d4cd43a90f0a19fd65f5c9c63815e6d68f9c95e8',
+            email: document.getElementById('email').value,
+            amount: 900000, // Amount in Kobo (9000 NGN)
+            currency: 'NGN',
+            ref: 'DRAE' + Math.floor((Math.random() * 1000000000) + 1),
+            callback: function(response) {
+                window.location.href = 'thank-you.html?ref=' + response.reference;
+            },
+            onClose: function() {
+                alert('Transaction was not completed, window closed.');
+            },
+        });
+        handler.openIframe();
+    }
+</script>
+
+</body>
+</html>
