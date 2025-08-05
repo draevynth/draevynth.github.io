@@ -155,7 +155,7 @@ function payWithPaystack() {
         amount: 5000 * 100, // Change amount as needed
         currency: 'NGN',
         callback: function(response){
-            window.location.href = "https://draevynth.github.io/thank-you.html
+            window.location.href = "https://draevynth.github.io/thank-you.html?ref=" + response.reference;
         },
         onClose: function(){
             alert('Payment was cancelled.');
@@ -164,8 +164,6 @@ function payWithPaystack() {
     handler.openIframe();
 }
 </script>
-
-<button onclick="payWithPaystack()">Buy Now</button>
       <div class="product-card">
         <img src="https://images.pexels.com/photos/8349233/pexels-photo-8349233.jpeg" alt="1-on-1 Business Strategy Session">
         <h3>1-on-1 Business Strategy Session</h3>
