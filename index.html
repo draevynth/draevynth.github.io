@@ -301,5 +301,31 @@ document.getElementById('paystackBtn').addEventListener('click', function () {
       handler.openIframe();
     }
   </script>
-</body>
+<body>
+  <!-- Paste it BELOW this line -->
+    <form action="https://formsubmit.co/your-email@gmail.com" method="POST">
+  <input type="hidden" name="_subject" value="New Order from DRAEVYNTH Website">
+  <input type="hidden" name="_next" value="https://draevynth.github.io/thank-you.html">
+
+  <label for="product">Product</label>
+  <select id="product" name="Product" required>
+    <option value="Silent Branding Masterclass">Silent Branding Masterclass</option>
+    <option value="Exclusive Cap">Exclusive Cap</option>
+    <option value="Content Blueprint">Content Blueprint</option>
+  </select>
+
+  <label for="quantity">Quantity</label>
+  <input type="number" id="quantity" name="Quantity" min="1" required>
+
+  <label for="name">Full Name</label>
+  <input type="text" id="name" name="Name" required>
+
+  <label for="phone">Phone Number</label>
+  <input type="tel" id="phone" name="Phone" required>
+
+  <label for="address">Delivery Address</label>
+  <textarea id="address" name="Address" rows="3" required></textarea>
+
+  <button type="submit">Submit Order</button>
+    </form>
     </html>
