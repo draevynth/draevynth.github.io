@@ -147,22 +147,26 @@
       <<a href="product.html?product=silent-branding-masterclass">View Details</a>
           <script src="https://js.paystack.co/v1/inline.js"></script>
 <script>
-function payWithPaystack(product, amount) {
-  var handler = PaystackPop.setup({
-    key: 'pk_test_d4cd43a90f0a19fd65f5c9c63815e6d68f9c95e8',
-    email: 'draevynth@gmail.com',
-    amount: amount * 100,
-    currency: 'NGN',
-    callback: function(response){
-      window.location.href = "thank-you.html";
-    },
-    onClose: function(){
-      alert('Transaction was not completed.');
-    }
-  });
-  handler.openIframe();
+function payWithPaystack() {
+    var handler = PaystackPop.setup({
+        key: 'pk_test_d4cd43a90f0a19fd65f5c9c63815e6d68f9c95e8', // Your Public Key
+        email: 'draevynth@gmail.com',
+        amount: 5000 * 100,  // Change this to the correct amount in Kobo
+        currency: 'NGN',
+        callback: function(response){
+            // Redirect after successful payment
+            window.location.href = "https://draevynth.github.io/thank-you.html";
+        },
+        onClose: function(){
+            alert('Transaction was not completed.');
+        }
+    });
+    handler.openIframe();
 }
 </script>
+
+<!-- BUY NOW BUTTON -->
+<button onclick="payWithPaystack()" style="padding: 12px 25px; background-color: #00ff99; color: #000; border: none; border-radius: 8px; font-weight: bold;">Buy Now</button>
    <div class="product-card">
         <img src="https://images.pexels.com/photos/8349233/pexels-photo-8349233.jpeg" alt="1-on-1 Business Strategy Session">
         <h3>1-on-1 Business Strategy Session</h3>
