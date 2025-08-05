@@ -2,66 +2,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details</title>
+    <title>Product Details | DRAEVYNTH</title>
     <style>
-        body { background-color: #0d0d0d; color: #fff; font-family: Arial, sans-serif; padding: 20px; text-align: center; }
-        .product-detail { max-width: 600px; margin: auto; background: #1a1a1a; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
-        .product-detail img { width: 100%; border-radius: 10px; }
-        .product-detail h1 { color: #00ff99; margin-top: 20px; }
-        .product-detail p { font-size: 16px; }
-        .back-btn { margin-top: 20px; display: inline-block; padding: 10px 20px; background-color: #00ff99; color: #0d0d0d; text-decoration: none; border-radius: 5px; }
+        body { background-color: #0d0d0d; color: #fff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { max-width: 800px; margin: 50px auto; padding: 20px; background: #1a1a1a; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.5); }
+        h1 { color: #00ff99; }
+        .product-img { width: 100%; border-radius: 10px; margin: 20px 0; }
+        .buy-btn { padding: 15px 30px; background-color: #00ff99; color: #0d0d0d; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 20px; }
+        .buy-btn:hover { background-color: #00cc7a; }
     </style>
 </head>
 <body>
-    <div class="product-detail" id="productDetail">
-        <h1>Loading...</h1>
-        <p>Please wait...</p>
+    <div class="container">
+        <h1 id="product-title">Product Name</h1>
+        <img id="product-image" class="product-img" src="" alt="Product Image">
+        <p id="product-description">Product description will appear here.</p>
+        <a id="buy-button" class="buy-btn" href="#">Buy Now</a>
     </div><script>
     const products = {
         'silent-branding-masterclass': {
             title: 'Silent Branding Masterclass',
             image: 'https://images.pexels.com/photos/6949416/pexels-photo-6949416.jpeg',
-            description: 'Master the art of Silent Branding and build a powerful business presence quietly.'
+            description: 'Learn how to build a powerful brand silently and effectively.',
+            price: 4900
         },
         'business-strategy-session': {
             title: '1-on-1 Business Strategy Session',
             image: 'https://images.pexels.com/photos/8349233/pexels-photo-8349233.jpeg',
-            description: 'Get personalized business strategies to grow your brand with expert guidance.'
+            description: 'Exclusive one-on-one session to plan your business strategies.',
+            price: 9900
         },
         'motivational-voice-pack': {
             title: 'Motivational Voice Pack',
             image: 'https://images.pexels.com/photos/8761621/pexels-photo-8761621.jpeg',
-            description: 'A collection of powerful voiceovers to keep you inspired and focused.'
+            description: 'Powerful motivational audio packs to keep you inspired.',
+            price: 2900
         },
         'content-blueprint': {
             title: 'DRAEVYNTH Content Blueprint',
             image: 'https://images.pexels.com/photos/5905707/pexels-photo-5905707.jpeg',
-            description: 'A step-by-step content strategy guide for growing your brand online.'
+            description: 'A comprehensive guide to content creation for entrepreneurs.',
+            price: 3900
         },
         'make-money-course': {
-            title: 'Online Course: Make Money Online',
+            title: 'Make Money Online Course',
             image: 'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg',
-            description: 'Learn practical strategies to build income streams and succeed online.'
+            description: 'Step-by-step course on how to make money online effectively.',
+            price: 7900
         }
     };
 
     const urlParams = new URLSearchParams(window.location.search);
     const productKey = urlParams.get('product');
 
-    const product = products[productKey];
-    const productDetail = document.getElementById('productDetail');
-
-    if (product) {
-        productDetail.innerHTML = `
-            <img src="${product.image}" alt="${product.title}">
-            <h1>${product.title}</h1>
-            <p>${product.description}</p>
-            <a href="index.html" class="back-btn">Back to Home</a>
-        `;
+    if(products[productKey]) {
+        document.getElementById('product-title').innerText = products[productKey].title;
+        document.getElementById('product-image').src = products[productKey].image;
+        document.getElementById('product-description').innerText = products[productKey].description;
+        document.getElementById('buy-button').href = `#`;
     } else {
-        productDetail.innerHTML = '<h1>Product Not Found</h1><p>The product you are looking for does not exist.</p><a href="index.html" class="back-btn">Back to Home</a>';
+        document.querySelector('.container').innerHTML = '<h1>Product Not Found</h1><p>The product you are looking for does not exist.</p>';
     }
 </script>
 
 </body>
+</html></body>
 </html>
