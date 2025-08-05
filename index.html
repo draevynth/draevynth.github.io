@@ -147,26 +147,23 @@
       <<a href="product.html?product=silent-branding-masterclass">View Details</a>
           <script src="https://js.paystack.co/v1/inline.js"></script>
 <script>
-function payWithPaystack() {
-    var handler = PaystackPop.setup({
-        key: 'pk_test_d4cd43a90f0a19fd65f5c9c63815e6d68f9c95e8',
-        email: 'draevynth@gmail.com',
-        amount: 5000 * 100, // Change amount as needed
-        currency: 'NGN',
-        callback: function(response){
-            callback: function(response){
-    // On successful payment, redirect to Thank You page
+function payWithPaystack(product, amount) {
+  var handler = PaystackPop.setup({
+    key: 'pk_test_d4cd43a90f0a19fd65f5c9c63815e6d68f9c95e8',
+    email: 'draevynth@gmail.com',
+    amount: amount * 100,
+    currency: 'NGN',
     callback: function(response){
-    window.location.href = "https://draevynth.github.io/thank-you.html";
+      window.location.href = "thank-you.html";
+    },
+    onClose: function(){
+      alert('Transaction was not completed.');
     }
-        onClose: function(){
-            alert('Payment was cancelled.');
-        }
-    });
-    handler.openIframe();
+  });
+  handler.openIframe();
 }
 </script>
-      <div class="product-card">
+   <div class="product-card">
         <img src="https://images.pexels.com/photos/8349233/pexels-photo-8349233.jpeg" alt="1-on-1 Business Strategy Session">
         <h3>1-on-1 Business Strategy Session</h3>
         <p>$6.34</p>
