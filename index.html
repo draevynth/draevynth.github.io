@@ -156,8 +156,9 @@ function payWithPaystack() {
         callback: function(response){
             callback: function(response){
     // On successful payment, redirect to Thank You page
-    window.location.href = "https://draevynth.github.io/thank-you.html?ref=" + response.reference;
-            }
+    callback: function(response){
+    window.location.href = "https://draevynth.github.io/thank-you.html";
+    }
         onClose: function(){
             alert('Payment was cancelled.');
         }
