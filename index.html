@@ -145,35 +145,28 @@
     <p><strong>Price:</strong> $7</p>
     <button onclick="payWithPaystack('silent branding master class ', 9900)">Buy Now</button>
       <<a href="product.html?product=silent-branding-masterclass">View Details</a>
-</body>
-     </html>
-      <<script src="https://js.paystack.co/v1/inline.js"></script>
+<a href="product.html?product=business-strategy-session">View Details</a>
+          <script src="https://js.paystack.co/v1/inline.js"></script>
 <script>
-  function payWithPaystack(product, amount) {
+function payWithPaystack() {
     var handler = PaystackPop.setup({
-      key: 'pk_test_d4cd43a90f0a19fd65f5c9c63815e6d68f9c95e8', // Your Paystack Public Key
-      email: 'draevynth@gmail.com',
-      amount: amount * 100, // amount in kobo (multiply by 100)
-      currency: 'NGN',
-      metadata: {
-        custom_fields: [
-          { display_name: "Product", variable_name: "product", value: product }
-        ]
-      },
-      callback: function(response) {
-        // Redirect to Thank You Page after successful payment
-        window.location.href = "thank-you.html?ref=" + response.reference;
-      },
-      onClose: function() {
-        alert('Transaction was cancelled');
-      }
+        key: 'pk_test_d4cd43a90f0a19fd65f5c9c63815e6d68f9c95e8', // Your Paystack Test Key
+        email: 'draevynth@gmail.com',
+        amount: 700 * 100, // NGN 700 in kobo (adjust as needed)
+        currency: 'NGN',
+        callback: function(response){
+            // Redirect after successful payment
+            window.location.href = "thank-you.html?ref=" + response.reference;
+        },
+        onClose: function(){
+            alert('Transaction was not completed.');
+        }
     });
     handler.openIframe();
-  }
+}
 </script>
 
-<a href="product.html?product=business-strategy-session">View Details</a>
-q
+<button onclick="payWithPaystack()">Buy Now</button>
       <div class="product-card">
         <img src="https://images.pexels.com/photos/8349233/pexels-photo-8349233.jpeg" alt="1-on-1 Business Strategy Session">
         <h3>1-on-1 Business Strategy Session</h3>
