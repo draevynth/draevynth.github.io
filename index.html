@@ -145,7 +145,6 @@
     <p><strong>Price:</strong> $7</p>
     <button onclick="payWithPaystack('silent branding master class ', 9900)">Buy Now</button>
       <<a href="product.html?product=silent-branding-masterclass">View Details</a>
-<a href="product.html?product=business-strategy-session">View Details</a>
           <script src="https://js.paystack.co/v1/inline.js"></script>
 <script>
 function payWithPaystack() {
@@ -155,8 +154,10 @@ function payWithPaystack() {
         amount: 5000 * 100, // Change amount as needed
         currency: 'NGN',
         callback: function(response){
-            window.location.href = "https://draevynth.github.io/thank-you.html?ref=" + response.reference;
-        },
+            callback: function(response){
+    // On successful payment, redirect to Thank You page
+    window.location.href = "https://draevynth.github.io/thank-you.html?ref=" + response.reference;
+            }
         onClose: function(){
             alert('Payment was cancelled.');
         }
