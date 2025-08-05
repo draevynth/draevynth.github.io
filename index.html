@@ -147,25 +147,29 @@
       <<a href="product.html?product=silent-branding-masterclass">View Details</a>
 </body>
      </html>
-      <script src="https://js.paystack.co/v1/inline.js"></script>
+      <<script src="https://js.paystack.co/v1/inline.js"></script>
 <script>
-document.getElementById('paystackBtn').addEventListener('click', function () {
+  function payWithPaystack(product, amount) {
     var handler = PaystackPop.setup({
-        key: 'pk_test_d4cd43a90f0a19fd65f5c9c63815e6d68f9c95e8', // Your public test key
-        email: 'draevynth@gmail.com', // Your Gmail here
-        amount: amount * 100, // 6.4 in kobo (multiply by 100)
-        currency: 'NGN',
-        callback: function(response){
-            // On successful payment
-    window.location.href = "thank-you.html?ref=" + response.reference;
-        },
-        onClose: function(){
-            // Payment cancelled
-            window.location.href = "payment-failed.html";
-        }
+      key: 'pk_test_d4cd43a90f0a19fd65f5c9c63815e6d68f9c95e8', // Your Paystack Public Key
+      email: 'draevynth@gmail.com',
+      amount: amount * 100, // amount in kobo (multiply by 100)
+      currency: 'NGN',
+      metadata: {
+        custom_fields: [
+          { display_name: "Product", variable_name: "product", value: product }
+        ]
+      },
+      callback: function(response) {
+        // Redirect to Thank You Page after successful payment
+        window.location.href = "thank-you.html?ref=" + response.reference;
+      },
+      onClose: function() {
+        alert('Transaction was cancelled');
+      }
     });
     handler.openIframe();
-});
+  }
 </script>
 
 <a href="product.html?product=business-strategy-session">View Details</a>
