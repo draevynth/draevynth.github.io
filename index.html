@@ -150,16 +150,15 @@
 <script>
 function payWithPaystack() {
     var handler = PaystackPop.setup({
-        key: 'pk_test_d4cd43a90f0a19fd65f5c9c63815e6d68f9c95e8', // Your Paystack Test Key
+        key: 'pk_test_d4cd43a90f0a19fd65f5c9c63815e6d68f9c95e8',
         email: 'draevynth@gmail.com',
-        amount: 700 * 100, // NGN 700 in kobo (adjust as needed)
+        amount: 5000 * 100, // Change amount as needed
         currency: 'NGN',
         callback: function(response){
-            // Redirect after successful payment
-            window.location.href = "thank-you.html?ref=" + response.reference;
+            window.location.href = "https://draevynth.github.io/docs/silent-branding-course-2.pdf";
         },
         onClose: function(){
-            alert('Transaction was not completed.');
+            alert('Payment was cancelled.');
         }
     });
     handler.openIframe();
