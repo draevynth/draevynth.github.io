@@ -1,153 +1,123 @@
-            
-/* Reset and Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DRAEVYNTH - Business Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b0c10;
+      color: #ffffff;
+    }
 
-body {
-  background-color: #0d0d0d;
-  color: #f2f2f2;
-  line-height: 1.6;
-}
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
 
-a {
-  color: #00ffcc;
-  text-decoration: none;
-}
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
 
-a:hover {
-  text-decoration: underline;
-}
+    .product-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
 
-/* Header */
-.header {
-  background-color: #121212;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #1f1f1f;
-}
+    .product-card {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      padding: 15px;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #00ffcc;
-}
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
 
-.nav a {
-  margin-left: 1.2rem;
-  font-size: 0.95rem;
-}
+    .product-card h2 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
 
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
-}
+    .product-card p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
 
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #ffffff;
-}
+    .product-card a {
+      display: block;
+      text-align: center;
+      background-color: #00a86b;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
 
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  color: #cccccc;
-}
+    footer {
+      background-color: #121212;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
 
-.cta-button {
-  background-color: #00ffcc;
-  color: #000000;
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
+    @media (max-width: 768px) {
+      .product-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
 
-.cta-button:hover {
-  background-color: #00ccaa;
-}
+<header>
+  <h1>DRAEVYNTH STORE</h1>
+  <p>Your hub for business, products, mentoring & more.</p>
+</header>
 
-/* Products Section */
-.products {
-  padding: 3rem 2rem;
-  background-color: #0a0a0a;
-}
+<section class="product-section">
+  <div class="product-card">
+    <img src="https://placehold.co/300x200?text=Business+Course" alt="Course Image">
+    <h2>Silent Branding Masterclass</h2>
+    <p>Learn how to build a powerful silent brand and grow your online income strategy step-by-step.</p>
+    <a href="https://wa.me/2347011729564?text=I%20want%20to%20buy%20the%20Silent%20Branding%20Course">Order on WhatsApp</a>
+  </div>
 
-.products h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #00ffcc;
-}
+  <div class="product-card">
+    <img src="https://placehold.co/300x200?text=Physical+Product" alt="Product Image">
+    <h2>Branded T-Shirt</h2>
+    <p>High-quality DRAEVYNTH branded T-shirt, available in multiple sizes and colors.</p>
+    <a href="https://wa.me/2347011729564?text=I%20want%20to%20order%20a%20Branded%20T-Shirt">Order on WhatsApp</a>
+  </div>
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
-  max-width: 1000px;
-  margin: auto;
-}
+  <div class="product-card">
+    <img src="https://placehold.co/300x200?text=Digital+Pack" alt="Product Image">
+    <h2>Voice Motivation Pack</h2>
+    <p>Download motivational voice packs created by DRAEVYNTH to inspire your daily hustle.</p>
+    <a href="https://wa.me/2347011729564?text=I%20want%20to%20buy%20the%20Motivation%20Voice%20Pack">Order on WhatsApp</a>
+  </div>
+</section>
 
-.product-card {
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 255, 204, 0.1);
-  transition: transform 0.3s;
-}
+<footer>
+  &copy; 2025 DRAEVYNTH. All rights reserved. | WhatsApp: +2347011729564
+</footer>
 
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.product-card h3 {
-  padding: 1rem 1rem 0 1rem;
-  font-size: 1.2rem;
-  color: #ffffff;
-}
-
-.product-card p {
-  padding: 0.5rem 1rem;
-  font-size: 0.95rem;
-  color: #cccccc;
-}
-
-.whatsapp-btn {
-  display: block;
-  margin: 1rem;
-  padding: 0.6rem;
-  text-align: center;
-  background-color: #25D366;
-  color: white;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.whatsapp-btn:hover {
-  background-color: #1ebe5d;
-}
-
-/* Footer */
-.footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #121212;
-  color: #999;
-  font-size: 0.9rem;
-  border-top: 1px solid #1f1f1f;
-} 
+</body>
+</html>      
+    
