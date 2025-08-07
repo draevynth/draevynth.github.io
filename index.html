@@ -1,169 +1,118 @@
-            <!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DRAEVYNTH | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DRAEVYNTH | Official Homepage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0a0a0a;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0e0e0e;
       color: #fff;
     }
-
     header {
-      background-color: #111;
-      padding: 30px 0;
+      padding: 2rem;
       text-align: center;
+      background: #121212;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .section {
+      padding: 3rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 2rem;
       border-bottom: 1px solid #333;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 2px;
+    .section:nth-child(even) {
+      background: #181818;
     }
-
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
-      padding: 20px 0;
-    }
-
-    .section {
-      background-color: #151515;
-      border: 1px solid #222;
-      margin-bottom: 30px;
-      padding: 20px;
-      border-radius: 10px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-    }
-
     .section img {
-      width: 300px;
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 20px;
+      width: 100%;
+      border-radius: 10px;
     }
-
-    .section-content {
-      flex: 1;
-      padding: 0 20px;
-    }
-
     .section-content h2 {
-      margin-top: 0;
-      font-size: 1.8rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
-
     .section-content p {
       font-size: 1rem;
-      margin: 10px 0 20px;
+      line-height: 1.6;
+      margin-bottom: 1rem;
     }
-
     .section-content a {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #e50914;
-      color: #fff;
       text-decoration: none;
+      background: #ff0055;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
       border-radius: 5px;
+      display: inline-block;
       transition: background 0.3s ease;
     }
-
     .section-content a:hover {
-      background-color: #ff202e;
+      background: #ff3366;
     }
-
     footer {
-      background-color: #111;
-      padding: 20px;
       text-align: center;
-      color: #777;
+      padding: 2rem;
+      background: #121212;
       font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-      .section {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .section-content {
-        padding: 0;
-      }
     }
   </style>
 </head>
 <body>
-
-<header>
-  <h1>DRAEVYNTH</h1>
-  <p>Silent Power. Visible Results.</p>
-</header>
-
-<div class="container">
-
-  <!-- COURSES -->
-  <div class="section">
-    <img src="https://source.unsplash.com/featured/?online,course,learning" alt="Courses">
+  <header>
+    <h1>DRAEVYNTH</h1>
+    <p>Courses • Mentorship • Services • Music • Shop • Resources</p>
+  </header>  <div class="section">
+    <img src="https://source.unsplash.com/600x400/?online,learning" alt="Courses" />
     <div class="section-content">
       <h2>Online Courses</h2>
-      <p>Learn the secrets of silent branding and online income strategy through expertly designed digital courses.</p>
+      <p>Learn how to build your silent brand and generate online income with our expert-led masterclasses.</p>
       <a href="courses.html">Explore Courses</a>
     </div>
-  </div>
-
-  <!-- MENTORSHIP -->
-  <div class="section">
-    <img src="https://source.unsplash.com/featured/?mentorship,coaching" alt="Mentorship">
+  </div>  <div class="section">
+    <img src="https://source.unsplash.com/600x400/?mentorship,coaching" alt="Mentorship" />
     <div class="section-content">
-      <h2>Mentorship</h2>
-      <p>Receive one-on-one guidance to unlock your brand potential and business success with DRAEVYNTH mentorship.</p>
-      <a href="mentorship.html">Join Mentorship</a>
+      <h2>1-on-1 Mentorship</h2>
+      <p>Join the DRAEVYNTH mentorship to unlock personalized strategies for business growth and personal success.</p>
+      <a href="mentorship.html">Get Mentored</a>
     </div>
-  </div>
-
-  <!-- SERVICES -->
-  <div class="section">
-    <img src="https://source.unsplash.com/featured/?strategy,business,branding" alt="Services">
+  </div>  <div class="section">
+    <img src="https://source.unsplash.com/600x400/?services,consulting" alt="Services" />
     <div class="section-content">
       <h2>Business Services</h2>
-      <p>We offer branding, business naming, product strategy, and consulting services tailored to your goals.</p>
+      <p>We offer branding, naming, consulting, and custom strategy services to bring your business to life.</p>
       <a href="services.html">View Services</a>
     </div>
-  </div>
-
-  <!-- MUSIC -->
-  <div class="section">
-    <img src="https://source.unsplash.com/featured/?music,studio,artist" alt="Music">
+  </div>  <div class="section">
+    <img src="https://source.unsplash.com/600x400/?music,singer" alt="Music" />
     <div class="section-content">
-      <h2>Music & Voice</h2>
-      <p>Get inspired through exclusive music, motivational soundpacks, and artist content powered by DRAEVYNTH.</p>
+      <h2>DRAEVYNTH Music</h2>
+      <p>Discover original songs, motivational tracks, and powerful storytelling through sound and rhythm.</p>
       <a href="music.html">Listen Now</a>
     </div>
-  </div>
-
-  <!-- SHOP -->
-  <div class="section">
-    <img src="https://source.unsplash.com/featured/?shopping,products,ecommerce" alt="Shop">
+  </div>  <div class="section">
+    <img src="https://source.unsplash.com/600x400/?shopping,products" alt="Shop" />
     <div class="section-content">
-      <h2>Shop</h2>
-      <p>Buy premium digital and physical products that amplify your brand, business, and lifestyle.</p>
-      <a href="shop.html">Shop Now</a>
+      <h2>Official Shop</h2>
+      <p>Shop digital and physical products created to help you grow, elevate, and dominate your silent empire.</p>
+      <a href="shop.html">Shop Products</a>
     </div>
-  </div>
-
-</div>
-
-<footer>
-  &copy; 2025 DRAEVYNTH. All rights reserved.
-</footer>
-
+  </div>  <div class="section">
+    <img src="https://source.unsplash.com/600x400/?ebook,download" alt="Resources" />
+    <div class="section-content">
+      <h2>Free Resources</h2>
+      <p>Download guides, tools, and resources designed to support your journey — all for free.</p>
+      <a href="free-resources.html">Download Free</a>
+    </div>
+  </div>  <footer>
+    &copy; 2025 DRAEVYNTH. All rights reserved.
+  </footer>
 </body>
-</html>
+    </html>        
+    
