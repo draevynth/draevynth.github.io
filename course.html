@@ -1,101 +1,91 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DRAEVYNTH Courses - Learn Branding, Marketing, and Online Business" />
-  <title>Courses | DRAEVYNTH</title>
+  <meta charset="UTF-8">
+  <title>DRAEVYNTH | Courses</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0e0e0e;
-      color: #f0f0f0;
-    }
-    header {
       background-color: #111;
-      padding: 1rem 2rem;
-      text-align: center;
-      border-bottom: 1px solid #333;
-    }
-    header h1 {
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-size: 2rem;
     }
-    .courses {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
+
+    header, footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
     }
-    .course {
+
+    nav {
       background-color: #1a1a1a;
-      padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      text-align: center;
     }
-    .course img {
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section img {
       width: 100%;
-      height: 200px;
+      max-height: 300px;
       object-fit: cover;
       border-radius: 8px;
+      margin-bottom: 20px;
     }
-    .course h3 {
-      margin: 1rem 0 0.5rem;
-      font-size: 1.2rem;
-    }
-    .course p {
-      font-size: 0.95rem;
-      color: #ccc;
-    }
-    .course a {
+
+    .cta {
+      margin-top: 20px;
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1rem;
-      background-color: #04d361;
-      color: black;
+      padding: 12px 25px;
+      background-color: #333;
+      color: #fff;
       text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
+      border-radius: 5px;
     }
-    .course a:hover {
-      background-color: #00b34e;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #111;
-      color: #666;
-      font-size: 0.85rem;
+
+    .cta:hover {
+      background-color: #555;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>DRAEVYNTH Courses</h1>
-    <p>Master Branding, Marketing, Strategy & Online Growth</p>
-  </header>  <section class="courses">
-    <div class="course">
-      <img src="https://via.placeholder.com/400x250?text=Silent+Branding+Course" alt="Silent Branding Course" />
-      <h3>Silent Branding Masterclass</h3>
-      <p>Discover the secrets of building a magnetic brand identity that works silently for you.</p>
-      <a href="https://wa.me/2347011729564?text=I'm%20interested%20in%20the%20Silent%20Branding%20Masterclass">Enroll via WhatsApp</a>
-    </div><div class="course">
-  <img src="https://via.placeholder.com/400x250?text=Digital+Income+Course" alt="Digital Income" />
-  <h3>Digital Income Accelerator</h3>
-  <p>Learn multiple ways to earn online through affiliate marketing, digital products, and social media strategy.</p>
-  <a href="https://wa.me/2347011729564?text=I'm%20interested%20in%20the%20Digital%20Income%20Accelerator%20Course">Enroll via WhatsApp</a>
-</div>
 
-<div class="course">
-  <img src="https://via.placeholder.com/400x250?text=Content+Strategy+Blueprint" alt="Content Blueprint" />
-  <h3>Content Strategy Blueprint</h3>
-  <p>Plan and create powerful content that attracts and converts the right audience for your brand.</p>
-  <a href="https://wa.me/2347011729564?text=I'm%20interested%20in%20the%20Content%20Strategy%20Blueprint">Enroll via WhatsApp</a>
-</div>
+<header>
+  <h1>DRAEVYNTH COURSES</h1>
+</header>
 
-  </section>  <footer>
-    &copy; 2025 DRAEVYNTH. All rights reserved.
-  </footer>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="courses.html">Courses</a>
+  <a href="mentorship.html">Mentorship</a>
+  <a href="services.html">Services</a>
+  <a href="music.html">Music</a>
+  <a href="shop.html">Shop</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="section">
+  <img src="https://via.placeholder.com/800x300?text=Silent+Branding+Masterclass" alt="Course Banner">
+  <h2>Silent Branding Masterclass</h2>
+  <p>Learn how to silently build a profitable business brand and online income strategy.</p>
+  <a href="https://wa.me/2347011729564" class="cta">Order via WhatsApp</a>
+</section>
+
+<footer>
+  © 2025 DRAEVYNTH. All rights reserved.
+</footer>
+
 </body>
 </html>
