@@ -1,108 +1,104 @@
-    <!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="DRAEVYNTH Professional Business Services - Branding, Naming, Strategy and More" />
+  <meta charset="UTF-8">
   <title>DRAEVYNTH | Services</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0e0e0e;
-      color: #f0f0f0;
-    }
-    header {
       background-color: #111;
-      padding: 1rem 2rem;
-      text-align: center;
-      border-bottom: 1px solid #333;
-    }
-    header h1 {
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-size: 2rem;
-      letter-spacing: 1px;
     }
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
+
+    header, footer {
+      background-color: #000;
+      text-align: center;
+      padding: 20px;
     }
-    .service {
+
+    nav {
       background-color: #1a1a1a;
-      padding: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      text-align: center;
     }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .service {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
     .service img {
       width: 100%;
-      height: 200px;
+      max-height: 300px;
       object-fit: cover;
       border-radius: 8px;
+      margin-bottom: 20px;
     }
-    .service h3 {
-      margin: 1rem 0 0.5rem;
-      font-size: 1.2rem;
-    }
-    .service p {
-      font-size: 0.95rem;
-      color: #ccc;
-    }
-    .service a {
+
+    .cta {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1rem;
-      background-color: #04d361;
-      color: black;
+      padding: 12px 25px;
+      background-color: #333;
+      color: #fff;
       text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
+      border-radius: 5px;
+      margin-top: 10px;
     }
-    .service a:hover {
-      background-color: #00b34e;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #111;
-      color: #666;
-      font-size: 0.85rem;
+
+    .cta:hover {
+      background-color: #555;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>DRAEVYNTH Services</h1>
-    <p>Professional Business Solutions — Strategy, Branding, and More</p>
-  </header>
 
-  <section class="services">
-    <div class="service">
-      <img src="https://via.placeholder.com/400x250?text=Brand+Strategy+Service" alt="Brand Strategy">
-      <h3>Brand Strategy Session</h3>
-      <p>Work with DRAEVYNTH to design a powerful and silent brand strategy that sells without shouting.</p>
-      <a href="https://wa.me/2347011729564?text=I'm%20interested%20in%20the%20Brand%20Strategy%20Service">Order via WhatsApp</a>
-    </div>
+<header>
+  <h1>DRAEVYNTH SERVICES</h1>
+</header>
 
-    <div class="service">
-      <img src="https://via.placeholder.com/400x250?text=Business+Naming+Service" alt="Naming Service">
-      <h3>Business Name & Tagline</h3>
-      <p>Get a unique, meaningful business name and tagline that captures attention and builds trust instantly.</p>
-      <a href="https://wa.me/2347011729564?text=I'm%20interested%20in%20the%20Business%20Naming%20Service">Order via WhatsApp</a>
-    </div>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="courses.html">Courses</a>
+  <a href="mentorship.html">Mentorship</a>
+  <a href="services.html">Services</a>
+  <a href="music.html">Music</a>
+  <a href="shop.html">Shop</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-    <div class="service">
-      <img src="https://via.placeholder.com/400x250?text=Consulting+Service" alt="Consulting">
-      <h3>One-on-One Strategy Consulting</h3>
-      <p>Book a private session with DRAEVYNTH to discuss your business, brand, and online money strategy.</p>
-      <a href="https://wa.me/2347011729564?text=I'm%20interested%20in%20One-on-One%20Consulting">Order via WhatsApp</a>
-    </div>
-  </section>
+<section class="section">
+  <div class="service">
+    <img src="https://via.placeholder.com/800x300?text=Business+Branding+Service" alt="Branding">
+    <h2>Brand Naming & Setup</h2>
+    <p>We help you create a powerful brand name, visual identity, and online presence that stands out.</p>
+    <a href="https://wa.me/2347011729564" class="cta">Book Now</a>
+  </div>
 
-  <footer>
-    &copy; 2025 DRAEVYNTH. All rights reserved.
-  </footer>
+  <div class="service">
+    <img src="https://via.placeholder.com/800x300?text=Online+Strategy+Service" alt="Strategy">
+    <h2>Online Strategy Coaching</h2>
+    <p>Get one-on-one coaching on monetizing your brand and growing online with a silent strategy.</p>
+    <a href="https://wa.me/2347011729564" class="cta">Get Started</a>
+  </div>
+</section>
+
+<footer>
+  © 2025 DRAEVYNTH. All rights reserved.
+</footer>
+
 </body>
-</html>
+</html>    
