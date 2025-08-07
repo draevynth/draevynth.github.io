@@ -1,106 +1,80 @@
-  <!DOCTYPE html><html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DRAEVYNTH Official | Home</title>
+  <title>DRAEVYNTH | Home</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
-      margin: 0;
+      background-color: #111;
+      color: #fff;
       font-family: Arial, sans-serif;
-      background-color: #0e0e0e;
-      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
     }
     header {
-      background-color: #1a1a1a;
+      background-color: #000;
       padding: 20px;
       text-align: center;
     }
     header h1 {
-      margin: 0;
-      font-size: 2.5em;
+      color: #fff;
     }
     .section {
       padding: 40px 20px;
       border-bottom: 1px solid #333;
+      text-align: center;
+    }
+    .section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #000;
     }
     .section h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    .product {
-      background-color: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
       margin-top: 20px;
     }
-    .product img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 10px;
-      margin-bottom: 15px;
+    .section p {
+      margin: 10px 0 20px;
     }
-    .product p {
-      font-size: 1em;
-      line-height: 1.6;
-    }
-    .product a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #00b894;
+    .btn {
+      background-color: #ff6600;
       color: #fff;
+      padding: 10px 20px;
       text-decoration: none;
-      border-radius: 5px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #1a1a1a;
-      color: #aaa;
+      border-radius: 6px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>DRAEVYNTH</h1>
-    <p>Business | Branding | Courses | Music | Mentorship</p>
-  </header>  <!-- Courses Section -->  <div class="section" id="courses">
-    <h2>📘 Online Courses</h2>
-    <div class="product">
-      <img src="https://via.placeholder.com/400x250?text=Silent+Branding+Course" alt="Silent Branding Course">
-      <p>Learn silent branding strategies and online income models in this masterclass. Perfect for beginners and entrepreneurs.</p>
-      <a href="https://wa.me/2347011729564?text=I%20want%20to%20order%20the%20Silent%20Branding%20Course">Order Now via WhatsApp</a>
-    </div>
-  </div>  <!-- Mentorship Section -->  <div class="section" id="mentorship">
-    <h2>👨‍🏫 Mentorship</h2>
-    <div class="product">
-      <img src="https://via.placeholder.com/400x250?text=One-on-One+Mentorship" alt="Mentorship">
-      <p>Join our one-on-one mentorship program and receive personal guidance on branding, business growth, and success strategies.</p>
-      <a href="https://wa.me/2347011729564?text=I%20want%20Mentorship">Apply for Mentorship</a>
-    </div>
-  </div>  <!-- Services Section -->  <div class="section" id="services">
-    <h2>🛠️ Business Services</h2>
-    <div class="product">
-      <img src="https://via.placeholder.com/400x250?text=Business+Branding+Service" alt="Services">
-      <p>Get professional naming, branding, and strategic consulting for your business and content creation goals.</p>
-      <a href="https://wa.me/2347011729564?text=I%20want%20Business%20Services">Request Services</a>
-    </div>
-  </div>  <!-- Music Section -->  <div class="section" id="music">
-    <h2>🎵 Music & Voice</h2>
-    <div class="product">
-      <img src="https://via.placeholder.com/400x250?text=Motivational+Music" alt="Music">
-      <p>Listen to motivational and emotional songs from DRAEVYNTH — music that inspires, heals, and empowers.</p>
-      <a href="https://wa.me/2347011729564?text=I%20want%20to%20access%20your%20Music">Access Music</a>
-    </div>
-  </div>  <!-- Shop Section -->  <div class="section" id="shop">
-    <h2>🛒 Shop Products</h2>
-    <div class="product">
-      <img src="https://via.placeholder.com/400x250?text=Physical+Product" alt="Shop Product">
-      <p>Buy our business kits, digital templates, guides, and physical tools to grow your brand online.</p>
-      <a href="https://wa.me/2347011729564?text=I%20want%20to%20buy%20a%20Product">Shop Now</a>
-    </div>
-  </div>  <footer>
-    &copy; 2025 DRAEVYNTH. All rights reserved.
-  </footer>
+    <h1>Welcome to DRAEVYNTH</h1>
+    <p>Your hub for Business, Mentorship, Music & More</p>
+  </header>  <div class="section">
+    <img src="https://via.placeholder.com/800x400?text=Courses" alt="Courses">
+    <h2>Courses</h2>
+    <p>Master the secrets of online income and silent branding.</p>
+    <a class="btn" href="courses.html">View Courses</a>
+  </div>  <div class="section">
+    <img src="https://via.placeholder.com/800x400?text=Mentorship" alt="Mentorship">
+    <h2>Mentorship</h2>
+    <p>Join one-on-one coaching to grow your business & mindset.</p>
+    <a class="btn" href="mentorship.html">Join Mentorship</a>
+  </div>  <div class="section">
+    <img src="https://via.placeholder.com/800x400?text=Services" alt="Services">
+    <h2>Business Services</h2>
+    <p>We help you with branding, business strategy, and product setup.</p>
+    <a class="btn" href="services.html">Explore Services</a>
+  </div>  <div class="section">
+    <img src="https://via.placeholder.com/800x400?text=Music" alt="Music">
+    <h2>Music</h2>
+    <p>Listen to motivational and soulful music from DRAEVYNTH.</p>
+    <a class="btn" href="music.html">Play Music</a>
+  </div>  <div class="section">
+    <img src="https://via.placeholder.com/800x400?text=Shop" alt="Shop">
+    <h2>Shop</h2>
+    <p>Buy digital and physical products to elevate your brand and business.</p>
+    <a class="btn" href="shop.html">Visit Shop</a>
+  </div>
 </body>
-  </html>
+</html>        
