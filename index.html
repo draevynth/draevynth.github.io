@@ -1,4 +1,4 @@
-        <!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,151 +6,164 @@
   <title>DRAEVYNTH | Home</title>
   <style>
     body {
-      background-color: #111;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
     }
 
     header {
-      background-color: #000;
-      padding: 20px;
+      background-color: #111;
+      padding: 30px 0;
       text-align: center;
+      border-bottom: 1px solid #333;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.5rem;
       letter-spacing: 2px;
     }
 
-    nav {
-      background-color: #111;
-      text-align: center;
-      padding: 10px;
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px 0;
     }
 
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-    }
-
-    .hero h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-
-    .product-section {
-      background-color: #1a1a1a;
-      margin: 30px auto;
+    .section {
+      background-color: #151515;
+      border: 1px solid #222;
+      margin-bottom: 30px;
       padding: 20px;
-      max-width: 800px;
-      border-radius: 12px;
-      text-align: center;
+      border-radius: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    .product-image {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
+    .section img {
+      width: 300px;
+      max-width: 100%;
       border-radius: 8px;
+      margin-bottom: 20px;
     }
 
-    .product-button {
+    .section-content {
+      flex: 1;
+      padding: 0 20px;
+    }
+
+    .section-content h2 {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .section-content p {
+      font-size: 1rem;
+      margin: 10px 0 20px;
+    }
+
+    .section-content a {
       display: inline-block;
-      margin-top: 15px;
-      padding: 12px 24px;
-      background-color: #444;
+      padding: 10px 20px;
+      background-color: #e50914;
       color: #fff;
       text-decoration: none;
-      border-radius: 6px;
-      transition: background-color 0.3s ease;
+      border-radius: 5px;
+      transition: background 0.3s ease;
     }
 
-    .product-button:hover {
-      background-color: #666;
+    .section-content a:hover {
+      background-color: #ff202e;
     }
 
     footer {
-      text-align: center;
+      background-color: #111;
       padding: 20px;
-      background-color: #000;
-      font-size: 14px;
+      text-align: center;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .section-content {
+        padding: 0;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>DRAEVYNTH</h1>
-  </header>
+<header>
+  <h1>DRAEVYNTH</h1>
+  <p>Silent Power. Visible Results.</p>
+</header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="courses.html">Courses</a>
-    <a href="mentorship.html">Mentorship</a>
-    <a href="services.html">Services</a>
-    <a href="music.html">Music</a>
-    <a href="shop.html">Shop</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<div class="container">
 
-  <section class="hero">
-    <h2>Welcome to DRAEVYNTH</h2>
-    <p>Your home for business, mentorship, branding, music & more.</p>
-  </section>
+  <!-- COURSES -->
+  <div class="section">
+    <img src="https://source.unsplash.com/featured/?online,course,learning" alt="Courses">
+    <div class="section-content">
+      <h2>Online Courses</h2>
+      <p>Learn the secrets of silent branding and online income strategy through expertly designed digital courses.</p>
+      <a href="courses.html">Explore Courses</a>
+    </div>
+  </div>
 
-  <!-- Course Section -->
-  <section class="product-section">
-    <img src="https://via.placeholder.com/800x300?text=Silent+Branding+Masterclass" class="product-image" alt="Courses">
-    <h2>Silent Branding Masterclass</h2>
-    <p>Learn how to build a powerful online brand and start earning silently.</p>
-    <a href="courses.html" class="product-button">View Course</a>
-  </section>
+  <!-- MENTORSHIP -->
+  <div class="section">
+    <img src="https://source.unsplash.com/featured/?mentorship,coaching" alt="Mentorship">
+    <div class="section-content">
+      <h2>Mentorship</h2>
+      <p>Receive one-on-one guidance to unlock your brand potential and business success with DRAEVYNTH mentorship.</p>
+      <a href="mentorship.html">Join Mentorship</a>
+    </div>
+  </div>
 
-  <!-- Mentorship Section -->
-  <section class="product-section">
-    <img src="https://via.placeholder.com/800x300?text=Mentorship+Program" class="product-image" alt="Mentorship">
-    <h2>1-on-1 Mentorship</h2>
-    <p>Get personal mentorship to guide your journey in business and branding.</p>
-    <a href="mentorship.html" class="product-button">Join Mentorship</a>
-  </section>
+  <!-- SERVICES -->
+  <div class="section">
+    <img src="https://source.unsplash.com/featured/?strategy,business,branding" alt="Services">
+    <div class="section-content">
+      <h2>Business Services</h2>
+      <p>We offer branding, business naming, product strategy, and consulting services tailored to your goals.</p>
+      <a href="services.html">View Services</a>
+    </div>
+  </div>
 
-  <!-- Services Section -->
-  <section class="product-section">
-    <img src="https://via.placeholder.com/800x300?text=Business+Services" class="product-image" alt="Services">
-    <h2>Business Services</h2>
-    <p>Branding, naming, strategy, and setup services tailored to your business goals.</p>
-    <a href="services.html" class="product-button">Explore Services</a>
-  </section>
+  <!-- MUSIC -->
+  <div class="section">
+    <img src="https://source.unsplash.com/featured/?music,studio,artist" alt="Music">
+    <div class="section-content">
+      <h2>Music & Voice</h2>
+      <p>Get inspired through exclusive music, motivational soundpacks, and artist content powered by DRAEVYNTH.</p>
+      <a href="music.html">Listen Now</a>
+    </div>
+  </div>
 
-  <!-- Music Section -->
-  <section class="product-section">
-    <img src="https://via.placeholder.com/800x300?text=Music+by+DRAEVYNTH" class="product-image" alt="Music">
-    <h2>DRAEVYNTH Music</h2>
-    <p>Listen to inspirational and motivational tracks crafted for entrepreneurs.</p>
-    <a href="music.html" class="product-button">Listen to Music</a>
-  </section>
+  <!-- SHOP -->
+  <div class="section">
+    <img src="https://source.unsplash.com/featured/?shopping,products,ecommerce" alt="Shop">
+    <div class="section-content">
+      <h2>Shop</h2>
+      <p>Buy premium digital and physical products that amplify your brand, business, and lifestyle.</p>
+      <a href="shop.html">Shop Now</a>
+    </div>
+  </div>
 
-  <!-- Shop Section -->
-  <section class="product-section">
-    <img src="https://via.placeholder.com/800x300?text=Digital+%26+Physical+Products" class="product-image" alt="Shop">
-    <h2>Shop</h2>
-    <p>Browse and order our exclusive digital and physical products.</p>
-    <a href="shop.html" class="product-button">Visit Shop</a>
-  </section>
+</div>
 
-  <footer>
-    © 2025 DRAEVYNTH. All rights reserved.
-  </footer>
+<footer>
+  &copy; 2025 DRAEVYNTH. All rights reserved.
+</footer>
 
 </body>
 </html>
