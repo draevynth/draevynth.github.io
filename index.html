@@ -14,95 +14,112 @@
             // Payment cancelled
             window.location.href = "payment-failed.html";
                     window.location.href = "payment-failed.html";
-                <!DOCTYPE html>
-<html lang="en">
+                <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DRAEVYNTH | Business, Products, Mentorship & Music</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="DRAEVYNTH Official - Shop Digital & Physical Products, Courses, Services, and More" />
+  <title>DRAEVYNTH | Official Business Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+    }
+    header {
+      background-color: #111;
+      padding: 1rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .product {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .product h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.2rem;
+    }
+    .product p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+    .product a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1rem;
+      background-color: #04d361;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .product a:hover {
+      background-color: #00b34e;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #111;
+      color: #666;
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <div class="logo">DRAEVYNTH</div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
-      <a href="courses.html">Courses</a>
-      <a href="mentorship.html">Mentorship</a>
-      <a href="services.html">Services</a>
-      <a href="music.html">Music</a>
-      <a href="resources.html">Free Resources</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <header>
+    <h1>DRAEVYNTH Official Store</h1>
+    <p>Your One-Stop Business Hub — Shop, Learn, Earn</p>
+  </header>  <section class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/400x250?text=Branding+Masterclass" alt="Branding Course" />
+      <h3>Silent Branding Masterclass</h3>
+      <p>Learn how to build a powerful brand and make money online silently. Instant access after payment.</p>
+      <a href="https://wa.me/2347011729564?text=I'm%20interested%20in%20the%20Silent%20Branding%20Masterclass">Order via WhatsApp</a>
+    </div><div class="product">
+  <img src="https://via.placeholder.com/400x250?text=Business+Mentorship" alt="Mentorship" />
+  <h3>Business Mentorship (1-on-1)</h3>
+  <p>Work directly with DRAEVYNTH to grow your brand and earn from digital and physical product strategies.</p>
+  <a href="https://wa.me/2347011729564?text=I'm%20interested%20in%201-on-1%20Business%20Mentorship">Order via WhatsApp</a>
+</div>
 
-  <section class="hero">
-    <h1>Build Your Business. Sell Anything. Be Unstoppable.</h1>
-    <p>Get digital and physical products, join courses, get mentored, or enjoy DRAEVYNTH music — all in one place.</p>
-    <a class="cta-button" href="https://wa.me/2347011729564">Chat on WhatsApp</a>
-  </section>
+<div class="product">
+  <img src="https://via.placeholder.com/400x250?text=Online+Product+Kit" alt="Digital Kit" />
+  <h3>Online Business Starter Kit</h3>
+  <p>Get all the templates, tools, and strategies to launch your business online — instantly downloadable.</p>
+  <a href="https://wa.me/2347011729564?text=I'm%20interested%20in%20the%20Online%20Business%20Starter%20Kit">Order via WhatsApp</a>
+</div>
 
-  <section class="products">
-    <h2>Featured Products</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1555529669-e69f8b5459ae?auto=format&fit=crop&w=600&q=80" alt="Branding Guide" />
-        <h3>Silent Branding Guide (PDF)</h3>
-        <p>A powerful guide to help you build a brand in silence and grow online income fast.</p>
-        <a class="whatsapp-btn" href="https://wa.me/2347011729564?text=I'm%20interested%20in%20the%20Silent%20Branding%20Guide">Order Now</a>
-      </div>
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Startup Kit" />
-        <h3>Business Startup Kit</h3>
-        <p>Everything you need to start your own online business today.</p>
-        <a class="whatsapp-btn" href="https://wa.me/2347011729564?text=I'm%20interested%20in%20the%20Business%20Startup%20Kit">Order Now</a>
-      </div>
-    </div>
-  </section>
+<div class="product">
+  <img src="https://via.placeholder.com/400x250?text=Physical+Products" alt="Physical Product" />
+  <h3>Classic Branded T-Shirts</h3>
+  <p>High-quality, stylish DRAEVYNTH tees delivered to your doorstep. Available in all sizes.</p>
+  <a href="https://wa.me/2347011729564?text=I'm%20interested%20in%20the%20Branded%20T-Shirts">Order via WhatsApp</a>
+</div>
 
-  <footer class="footer">
-    <p>&copy; 2025 DRAEVYNTH. All rights reserved.</p>
-    <p>Contact us via WhatsApp: +2347011729564</p>
+  </section>  <footer>
+    &copy; 2025 DRAEVYNTH. All rights reserved.
   </footer>
-</body>/* DRAEVYNTH Dark Theme Website Style */
-
-body { margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0f0f0f; color: #f1f1f1; }
-
-header { background-color: #121212; padding: 20px; text-align: center; border-bottom: 2px solid #1f1f1f; }
-
-header h1 { margin: 0; font-size: 2em; color: #ffffff; letter-spacing: 2px; }
-
-nav { display: flex; justify-content: center; background-color: #1c1c1c; padding: 10px 0; border-bottom: 1px solid #333; }
-
-nav a { color: #f1f1f1; margin: 0 15px; text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
-
-nav a:hover { color: #00ffa2; }
-
-.hero { background: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30') no-repeat center center/cover; height: 400px; display: flex; align-items: center; justify-content: center; text-align: center; color: #ffffff; }
-
-.hero h2 { font-size: 3em; background: rgba(0, 0, 0, 0.6); padding: 20px; border-radius: 10px; }
-
-.products { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 40px; background-color: #181818; }
-
-.product-card { background-color: #222; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 255, 160, 0.2); transition: transform 0.3s ease; }
-
-.product-card:hover { transform: translateY(-5px); }
-
-.product-card img { width: 100%; height: 200px; object-fit: cover; }
-
-.product-card .info { padding: 20px; }
-
-.product-card h3 { margin: 0 0 10px; font-size: 1.2em; color: #00ffa2; }
-
-.product-card p { font-size: 0.95em; line-height: 1.5; color: #ccc; }
-
-.product-card .buy-btn { display: inline-block; margin-top: 15px; padding: 10px 20px; background-color: #00ffa2; color: #000; font-weight: bold; text-decoration: none; border-radius: 5px; transition: background 0.3s ease; }
-
-.product-card .buy-btn:hover { background-color: #00cc88; }
-
-footer { background-color: #121212; padding: 20px; text-align: center; color: #888; font-size: 0.9em; border-top: 1px solid #1f1f1f; }
-
-    
-</html>
+</body>
+                </html>
