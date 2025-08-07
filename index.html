@@ -1,152 +1,110 @@
-   
-<!DOCTYPE html><html lang="en">
-<head>
+<!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DRAEVYNTH Official | Business, Courses, Services</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>DRAEVYNTH Courses</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #0d0d0d;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f0f;
       color: #f2f2f2;
-    }
-    header {
-      background-color: #111;
-      padding: 2rem;
-      text-align: center;
-    }
-    h1, h2 {
-      color: #fff;
-    }
-    .section {
-      padding: 2rem;
-    }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-    .product-card {
-      background-color: #1a1a1a;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
-    }
-    .product-card:hover {
-      transform: translateY(-5px);
-    }
-    .product-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-    .product-content {
-      padding: 1rem;
-    }
-    .product-content h3 {
-      margin: 0 0 0.5rem;
-    }
-    .product-content p {
-      font-size: 0.95rem;
-    }
-    .product-content a {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #04c2c9;
-      color: #000;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      text-decoration: none;
-    }
+    }header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+}
+
+.container {
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 1.4em;
+  color: #00eaff;
+}
+
+.card p {
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #00eaff;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #777;
+  margin-top: 40px;
+}
+
   </style>
-</head>
-<body>
+</head><body>
   <header>
-    <h1>Welcome to DRAEVYNTH</h1>
-    <p>Your Hub for Business, Music, Mentorship, and More</p>
-  </header>  <section class="section">
-    <h2>Courses</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://source.unsplash.com/featured/?education,business" alt="Course">
-        <div class="product-content">
-          <h3>Silent Branding Masterclass</h3>
-          <p>Learn how to build a silent but powerful brand that sells online.</p>
-          <a href="https://wa.me/2347011729564">Order on WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </section>  <section class="section">
-    <h2>Mentorship</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://source.unsplash.com/featured/?mentorship,success" alt="Mentorship">
-        <div class="product-content">
-          <h3>1-on-1 Strategy Session</h3>
-          <p>Book a personal session to learn branding, marketing, or online income skills.</p>
-          <a href="https://wa.me/2347011729564">Book Now</a>
-        </div>
-      </div>
-    </div>
-  </section>  <section class="section">
-    <h2>Music</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://source.unsplash.com/featured/?music,studio" alt="Music">
-        <div class="product-content">
-          <h3>DRAEVYNTH Sound Collection</h3>
-          <p>Listen to exclusive tracks and motivational anthems.</p>
-          <a href="https://wa.me/2347011729564">Stream or Download</a>
-        </div>
-      </div>
-    </div>
-  </section>  <section class="section">
-    <h2>Services</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://source.unsplash.com/featured/?branding,design" alt="Services">
-        <div class="product-content">
-          <h3>Business Naming & Branding</h3>
-          <p>Get a powerful business name, tagline, and strategy to stand out.</p>
-          <a href="https://wa.me/2347011729564">Get Service</a>
-        </div>
-      </div>
-    </div>
-  </section>  <section class="section">
-    <h2>Shop</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://source.unsplash.com/featured/?products,ecommerce" alt="Shop">
-        <div class="product-content">
-          <h3>Brand Toolkit (Digital)</h3>
-          <p>A complete kit to start your online brand: templates, guides & more.</p>
-          <a href="https://wa.me/2347011729564">Buy Now</a>
-        </div>
-      </div>
-      <div class="product-card">
-        <img src="https://source.unsplash.com/featured/?tshirt,clothing" alt="T-shirt">
-        <div class="product-content">
-          <h3>Branded T-Shirt</h3>
-          <p>High-quality DRAEVYNTH t-shirt for business lifestyle lovers.</p>
-          <a href="https://wa.me/2347011729564">Order on WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </section>  <section class="section">
-    <h2>Free Resources</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://source.unsplash.com/featured/?ebook,guide" alt="Free PDF">
-        <div class="product-content">
-          <h3>Online Income Starter Guide</h3>
-          <p>Download your free eBook and start building income online.</p>
-          <a href="https://wa.me/2347011729564">Get Free Guide</a>
-        </div>
-      </div>
-    </div>
-  </section></body>
-</html>
+    <h1>DRAEVYNTH COURSES</h1>
+  </header>  <div class="container">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1532619675605-1ede6d19feda" alt="Branding Course" />
+      <h2>Silent Branding Masterclass</h2>
+      <p>Learn the secret psychology behind brand influence, visibility, and authority in silence. Perfect for creators and business starters.</p>
+      <a href="https://wa.me/2347011729564?text=I%20want%20to%20buy%20the%20Silent%20Branding%20Masterclass">Order via WhatsApp</a>
+    </div><div class="card">
+  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="Online Sales Course" />
+  <h2>Digital Sales Accelerator</h2>
+  <p>Discover how to turn your knowledge, passion, or product into steady online income using DRAEVYNTH strategic systems.</p>
+  <a href="https://wa.me/2347011729564?text=I'm%20interested%20in%20Digital%20Sales%20Accelerator">Order via WhatsApp</a>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1612832021246-e0bba26e2e67" alt="Income Strategy Blueprint" />
+  <h2>Income Strategy Blueprint</h2>
+  <p>Step-by-step guide to building a sustainable online income even without capital, followers, or experience.</p>
+  <a href="https://wa.me/2347011729564?text=I%20want%20the%20Income%20Strategy%20Blueprint">Order via WhatsApp</a>
+</div>
+
+  </div>  <footer>
+    &copy; 2025 DRAEVYNTH. All rights reserved.
+  </footer>
+</body></html>   
