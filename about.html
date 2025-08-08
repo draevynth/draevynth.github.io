@@ -1,89 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="About DRAEVYNTH - The Silent Strategist of Modern Business and Music" />
-  <title>DRAEVYNTH | About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | DRAEVYNTH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0b0b0b;
+      font-family: 'Poppins', sans-serif;
+      background: #0d0d0d;
       color: #f0f0f0;
     }
     header {
-      background-color: #111;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 1px solid #333;
+      background: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
     }
     header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
+      color: #fff;
+      font-weight: 700;
+      font-size: 24px;
     }
-    header p {
-      font-size: 1.1rem;
-      color: #aaa;
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ccc;
+      transition: 0.3s;
     }
-    .about-container {
+    nav a:hover {
+      color: #fff;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+    .hero h2 {
+      font-size: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .about-section {
+      padding: 60px 40px;
       display: flex;
       flex-wrap: wrap;
-      padding: 2rem;
-      gap: 2rem;
+      gap: 40px;
+      align-items: center;
       justify-content: center;
     }
     .about-image {
-      flex: 1 1 350px;
+      flex: 1 1 300px;
     }
     .about-image img {
       width: 100%;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
-    .about-text {
+    .about-content {
       flex: 2 1 400px;
-      max-width: 700px;
     }
-    .about-text h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    .about-content h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
     }
-    .about-text p {
+    .about-content p {
+      font-size: 18px;
       line-height: 1.7;
-      color: #ccc;
-      margin-bottom: 1.5rem;
     }
     footer {
+      background: #111;
+      padding: 30px 40px;
       text-align: center;
-      padding: 1.5rem;
-      background-color: #111;
-      font-size: 0.9rem;
-      color: #666;
-      border-top: 1px solid #333;
+      border-top: 1px solid #222;
+    }
+    footer p {
+      color: #888;
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+      }
+      .hero h2 {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>About DRAEVYNTH</h1>
-    <p>Silent Strategy. Hidden Power. Real Results.</p>
-  </header>
-
-  <section class="about-container">
+    <h1>DRAEVYNTH</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="mentorship.html">Mentorship</a>
+      <a href="services.html">Services</a>
+      <a href="music.html">Music</a>
+      <a href="shop.html">Shop</a>
+      <a href="free-resources.html">Free Resources</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>  <section class="hero">
+    <h2>About DRAEVYNTH</h2>
+  </section>  <section class="about-section">
     <div class="about-image">
-      <img src="https://via.placeholder.com/600x400?text=DRAEVYNTH+Founder" alt="DRAEVYNTH Founder">
+      <img src="https://images.unsplash.com/photo-1620255276213-839ddf4008c6" alt="Founder Image">
     </div>
-    <div class="about-text">
-      <h2>Meet the Mind Behind the Silence</h2>
-      <p>DRAEVYNTH is not just a brand — it's a movement. Founded by a visionary strategist with a passion for silent execution, business mastery, and deep creativity, DRAEVYNTH was born to disrupt the noisy world of online business and music.</p>
-      <p>We believe in action over noise. In doing the work instead of just talking about it. Whether it's helping creators launch silent brands, building hidden income strategies, or dropping powerful songs that inspire change — DRAEVYNTH is always operating in the shadows... strategically.</p>
-      <p>From coaching and courses to music and digital services, every part of this brand is designed to help others rise quietly but powerfully. Welcome to the dark side of branding — welcome to DRAEVYNTH.</p>
+    <div class="about-content">
+      <h3>Meet the Founder</h3>
+      <p>
+        I’m the mind behind DRAEVYNTH — a brand focused on silent business branding, empowering entrepreneurs, and building wealth through digital strategy. My mission is to help you start, scale, and stand out. From practical courses to elite mentorship and powerful audio motivation, DRAEVYNTH is a movement for creators, dreamers, and bold thinkers.
+      </p>
+      <p>
+        With every resource I share, I aim to deliver massive value and transformation. Whether you're starting from zero or scaling your business, this platform is your home for clarity, strategy, and growth.
+      </p>
     </div>
-  </section>
-
-  <footer>
-    &copy; 2025 DRAEVYNTH. All rights reserved.
+  </section>  <footer>
+    <p>&copy; 2025 DRAEVYNTH. All rights reserved.</p>
   </footer>
 </body>
-</html>
+  </html>
