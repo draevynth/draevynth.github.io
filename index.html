@@ -1,89 +1,134 @@
       
-  <!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DRAEVYNTH | Silent Branding & Strategy</title>
+  <title>DRAEVYNTH | Silent Branding & Business</title>
   <style>
     body {
-      background-color: #0a0a0a;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e0e0e;
+      color: #ffffff;
     }
-    .section {
-      padding: 40px 20px;
+    header {
+      background-color: #1a1a1a;
+      padding: 2rem;
       text-align: center;
-      border-bottom: 1px solid #1a1a1a;
     }
-    .section img {
-      width: 100%;
-      max-width: 720px;
-      height: auto;
+    h1 {
+      font-size: 2rem;
+      color: #ffffff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background-color: #1b1b1b;
       border-radius: 12px;
-      margin-bottom: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+      transition: 0.3s;
     }
-    .section a {
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card h3 {
+      margin: 0 0 0.5rem;
+    }
+    .card a {
       display: inline-block;
-      margin-top: 10px;
-      padding: 12px 28px;
-      background: #222;
-      color: #fff;
+      margin-top: 0.5rem;
+      color: #00ccff;
       text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
     }
-    .section a:hover {
-      background: #444;
+    .card a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <div class="section">
-    <h1>Silent Branding Masterclass</h1>
-    <img src="https://images.unsplash.com/photo-1581091012184-5c5c479f6d0b?auto=format&fit=crop&w=900&q=80" alt="Branding Masterclass" />
-    <a href="courses.html">View Course</a>
+<header>
+  <h1>Welcome to DRAEVYNTH</h1>
+  <p>Explore Courses, Mentorship, Music, Services, and More</p>
+</header>
+
+<div class="grid">
+
+  <!-- Course -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1581091012184-5c5c479f6d0b?auto=format&fit=crop&w=900&q=80" alt="Course">
+    <div class="card-content">
+      <h3>Silent Branding Masterclass</h3>
+      <p>Learn how to brand silently and build profitable online income.</p>
+      <a href="courses.html">View Course</a>
+    </div>
   </div>
 
-  <div class="section">
-    <h1>1-on-1 Mentorship</h1>
-    <img src="https://images.unsplash.com/photo-1590080876213-5ecf3bfe338c?auto=format&fit=crop&w=900&q=80" alt="Mentorship" />
-    <a href="mentorship.html">Join Now</a>
+  <!-- Mentorship -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1585421514287-27c1305a489f?auto=format&fit=crop&w=900&q=80" alt="Mentorship">
+    <div class="card-content">
+      <h3>One-on-One Mentorship</h3>
+      <p>Get personal guidance to build your business strategy and growth.</p>
+      <a href="mentorship.html">Join Mentorship</a>
+    </div>
   </div>
 
-  <div class="section">
-    <h1>Business Services</h1>
-    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80" alt="Services" />
-    <a href="services.html">Explore Services</a>
+  <!-- Services -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1556742400-b5b7c512aa2b?auto=format&fit=crop&w=900&q=80" alt="Services">
+    <div class="card-content">
+      <h3>Business Services</h3>
+      <p>Branding, Strategy, Business Naming, and Digital Setup.</p>
+      <a href="services.html">View Services</a>
+    </div>
   </div>
 
-  <div class="section">
-    <h1>Brand Naming & Taglines</h1>
-    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" alt="Naming" />
-    <a href="services.html#naming">Get Names</a>
+  <!-- Music -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=900&q=80" alt="Music">
+    <div class="card-content">
+      <h3>Music & Motivation</h3>
+      <p>Listen to powerful voicepacks, songs and motivational sounds.</p>
+      <a href="music.html">Explore Music</a>
+    </div>
   </div>
 
-  <div class="section">
-    <h1>Content Idea Blueprints</h1>
-    <img src="https://images.unsplash.com/photo-1603570625766-8fdf7f0b77ad?auto=format&fit=crop&w=900&q=80" alt="Blueprints" />
-    <a href="services.html#blueprints">Download Blueprints</a>
+  <!-- Shop -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1603570411126-870f93b483d4?auto=format&fit=crop&w=900&q=80" alt="Shop">
+    <div class="card-content">
+      <h3>Shop Physical & Digital Products</h3>
+      <p>Browse our store of helpful tools, guides and physical items.</p>
+      <a href="shop.html">Visit Shop</a>
+    </div>
   </div>
 
-  <div class="section">
-    <h1>Music & Motivation</h1>
-    <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&w=900&q=80" alt="Music" />
-    <a href="music.html">Listen Now</a>
+  <!-- Free Resources -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1604147706283-f88e36ec3f60?auto=format&fit=crop&w=900&q=80" alt="Free Resources">
+    <div class="card-content">
+      <h3>Free PDF Resources</h3>
+      <p>Download free business tools and branding PDFs instantly.</p>
+      <a href="resources.html">Download PDFs</a>
+    </div>
   </div>
 
-  <div class="section">
-    <h1>Free Resources</h1>
-    <img src="https://images.unsplash.com/photo-1526318472351-bc6c2f9cda5c?auto=format&fit=crop&w=900&q=80" alt="Free Resources" />
-    <a href="resources.html">Get PDFs</a>
-  </div>
+</div>
 
 </body>
 </html>
