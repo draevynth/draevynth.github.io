@@ -3,132 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DRAEVYNTH | Silent Branding & Business</title>
+  <title>DRAEVYNTH - Official Homepage</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0e0e0e;
-      color: #ffffff;
+      font-family: Arial, sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
     }
+
     header {
-      background-color: #1a1a1a;
-      padding: 2rem;
+      background-color: #111;
+      padding: 20px;
       text-align: center;
     }
-    h1 {
-      font-size: 2rem;
-      color: #ffffff;
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      letter-spacing: 2px;
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 10px;
+      gap: 30px;
     }
-    .card {
-      background-color: #1b1b1b;
+
+    .section {
+      background-color: #1a1a1a;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-      transition: 0.3s;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+      text-align: center;
+      transition: transform 0.3s;
     }
-    .card:hover {
-      transform: scale(1.02);
+
+    .section:hover {
+      transform: translateY(-5px);
     }
-    .card img {
+
+    .section img {
       width: 100%;
-      height: 180px;
+      height: 200px;
       object-fit: cover;
     }
-    .card-content {
-      padding: 1rem;
+
+    .section h2 {
+      margin: 15px 0 10px;
+      font-size: 1.3em;
     }
-    .card h3 {
-      margin: 0 0 0.5rem;
+
+    .section p {
+      font-size: 0.95em;
+      color: #ccc;
+      padding: 0 15px;
     }
-    .card a {
+
+    .section a {
       display: inline-block;
-      margin-top: 0.5rem;
-      color: #00ccff;
+      margin: 15px 0 20px;
+      padding: 10px 20px;
+      background-color: #3b3b3b;
+      color: #fff;
       text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
     }
-    .card a:hover {
-      text-decoration: underline;
+
+    .section a:hover {
+      background-color: #555;
+    }
+
+    footer {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Welcome to DRAEVYNTH</h1>
-  <p>Explore Courses, Mentorship, Music, Services, and More</p>
-</header>
+  <header>
+    <h1>Welcome to DRAEVYNTH</h1>
+    <p>Your Hub for Business, Music, and Strategy</p>
+  </header>
 
-<div class="grid">
-
-  <!-- Course -->
-  <div class="card">
-    <img src="https://placehold.co/600x400?text=Silent+Branding+Course" alt="Course">
-    <div class="card-content">
-      <h3>Silent Branding Masterclass</h3>
-      <p>Learn how to brand silently and build profitable online income.</p>
-      <a href="courses.html">View Course</a>
+  <div class="container">
+    <!-- Courses -->
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1584697964404-f225f8f68c1e" alt="Courses">
+      <h2>Courses</h2>
+      <p>Learn silent branding, online business, and more with DRAEVYNTH’s expert-led courses.</p>
+      <a href="courses.html">Explore Courses</a>
     </div>
-  </div>
 
-  <!-- Mentorship -->
-  <div class="card">
-    <img src="https://placehold.co/600x400?text=1-on-1+Mentorship" alt="Mentorship">
-    <div class="card-content">
-      <h3>One-on-One Mentorship</h3>
-      <p>Get personal guidance to build your business strategy and growth.</p>
-      <a href="mentorship.html">Join Mentorship</a>
+    <!-- Mentorship -->
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1600267165783-407b5d9f0c1f" alt="Mentorship">
+      <h2>Mentorship</h2>
+      <p>Join exclusive 1-on-1 mentoring programs and unlock your full potential.</p>
+      <a href="mentorship.html">Start Mentorship</a>
     </div>
-  </div>
 
-  <!-- Services -->
-  <div class="card">
-    <img src="https://placehold.co/600x400?text=Business+Services" alt="Services">
-    <div class="card-content">
-      <h3>Business Services</h3>
-      <p>Branding, Strategy, Business Naming, and Digital Setup.</p>
+    <!-- Services -->
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1581091012184-7d98c1f63b7f" alt="Services">
+      <h2>Business Services</h2>
+      <p>From branding to content strategy, get services that build your business.</p>
       <a href="services.html">View Services</a>
     </div>
-  </div>
 
-  <!-- Music -->
-  <div class="card">
-    <img src="https://placehold.co/600x400?text=Music+%26+Motivation" alt="Music">
-    <div class="card-content">
-      <h3>Music & Motivation</h3>
-      <p>Listen to powerful voicepacks, songs and motivational sounds.</p>
-      <a href="music.html">Explore Music</a>
-    </div>
-  </div>
-
-  <!-- Shop -->
-  <div class="card">
-    <img src="https://placehold.co/600x400?text=Shop+Products" alt="Shop">
-    <div class="card-content">
-      <h3>Shop Physical & Digital Products</h3>
-      <p>Browse our store of helpful tools, guides and physical items.</p>
+    <!-- Shop -->
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Shop">
+      <h2>Shop</h2>
+      <p>Explore physical and digital products designed for growth and impact.</p>
       <a href="shop.html">Visit Shop</a>
     </div>
-  </div>
 
-  <!-- Free Resources -->
-  <div class="card">
-    <img src="https://placehold.co/600x400?text=Free+PDFs" alt="Free Resources">
-    <div class="card-content">
-      <h3>Free PDF Resources</h3>
-      <p>Download free business tools and branding PDFs instantly.</p>
-      <a href="resources.html">Download PDFs</a>
+    <!-- Music -->
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947" alt="Music">
+      <h2>Music & Motivation</h2>
+      <p>Listen to motivational songs and powerful audio messages by DRAEVYNTH.</p>
+      <a href="music.html">Explore Music</a>
+    </div>
+
+    <!-- Free Resources -->
+    <div class="section">
+      <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765" alt="Free Resources">
+      <h2>Free Resources</h2>
+      <p>Download free guides, PDFs, and tools to start or grow your brand today.</p>
+      <a href="resources.html">Download Free</a>
     </div>
   </div>
 
-</div>
+  <footer>
+    &copy; 2025 DRAEVYNTH. All rights reserved.
+  </footer>
 
 </body>
-</html>      
-      
+</html>
