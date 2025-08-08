@@ -1,151 +1,124 @@
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DRAEVYNTH - Official Homepage</title>
+  <title>DRAEVYNTH | Homepage</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #0d0d0d;
-      color: #fff;
+      background-color: #0a0a0a;
+      color: white;
     }
-
     header {
       background-color: #111;
       padding: 20px;
       text-align: center;
     }
-
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 32px;
       letter-spacing: 2px;
     }
-
     .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 40px 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
+      padding: 40px;
     }
-
     .section {
-      background-color: #1a1a1a;
+      background-color: #1c1c1c;
       border-radius: 12px;
       overflow: hidden;
-      width: 300px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
-      text-align: center;
       transition: transform 0.3s;
+      text-align: center;
     }
-
     .section:hover {
       transform: translateY(-5px);
     }
-
     .section img {
       width: 100%;
       height: 200px;
       object-fit: cover;
     }
-
     .section h2 {
+      font-size: 22px;
       margin: 15px 0 10px;
-      font-size: 1.3em;
     }
-
     .section p {
-      font-size: 0.95em;
-      color: #ccc;
       padding: 0 15px;
+      font-size: 15px;
+      color: #ccc;
     }
-
     .section a {
       display: inline-block;
-      margin: 15px 0 20px;
+      margin: 15px auto 25px;
       padding: 10px 20px;
-      background-color: #3b3b3b;
-      color: #fff;
+      background-color: #e91e63;
+      color: white;
       text-decoration: none;
       border-radius: 8px;
       transition: background 0.3s;
     }
-
     .section a:hover {
-      background-color: #555;
-    }
-
-    footer {
-      background-color: #111;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9em;
-      color: #888;
+      background-color: #ff4081;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Welcome to DRAEVYNTH</h1>
-    <p>Your Hub for Business, Music, and Strategy</p>
+    <h1>DRAEVYNTH | Official Store</h1>
   </header>
 
-  <!-- Courses -->
-<div class="section">
-  <img src="https://cdn.pixabay.com/photo/2016/11/29/12/54/business-1868728_960_720.jpg" alt="Courses">
-  <h2>Courses</h2>
-  <p>Learn silent branding, online business, and more with DRAEVYNTH’s expert-led courses.</p>
-  <a href="courses.html">Explore Courses</a>
-</div>
-
-<!-- Mentorship -->
-<div class="section">
-  <img src="https://cdn.pixabay.com/photo/2017/01/10/19/05/student-1976239_960_720.jpg" alt="Mentorship">
-  <h2>Mentorship</h2>
-  <p>Join exclusive 1-on-1 mentoring programs and unlock your full potential.</p>
-  <a href="mentorship.html">Start Mentorship</a>
-</div>
-
-<!-- Business Services -->
-<div class="section">
-  <img src="https://cdn.pixabay.com/photo/2017/08/10/07/32/business-2618495_960_720.jpg" alt="Services">
-  <h2>Business Services</h2>
-  <p>From branding to content strategy, get services that build your business.</p>
-  <a href="services.html">View Services</a>
-</div>
-
-    <!-- Shop -->
+  <div class="container">
+    <!-- Courses -->
     <div class="section">
-      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Shop">
-      <h2>Shop</h2>
-      <p>Explore physical and digital products designed for growth and impact.</p>
-      <a href="shop.html">Visit Shop</a>
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/12/54/business-1868728_960_720.jpg" alt="Courses">
+      <h2>Courses</h2>
+      <p>Learn silent branding, online business, and more with DRAEVYNTH’s expert-led courses.</p>
+      <a href="courses.html">Explore Courses</a>
     </div>
 
-    <!-- Music -->
+    <!-- Mentorship -->
     <div class="section">
-      <img src="https://images.unsplash.com/photo-1511376777868-611b54f68947" alt="Music">
+      <img src="https://cdn.pixabay.com/photo/2017/01/10/19/05/student-1976239_960_720.jpg" alt="Mentorship">
+      <h2>Mentorship</h2>
+      <p>Join exclusive 1-on-1 mentoring programs and unlock your full potential.</p>
+      <a href="mentorship.html">Start Mentorship</a>
+    </div>
+
+    <!-- Business Services -->
+    <div class="section">
+      <img src="https://cdn.pixabay.com/photo/2017/08/10/07/32/business-2618495_960_720.jpg" alt="Services">
+      <h2>Business Services</h2>
+      <p>From branding to content strategy, get services that build your business.</p>
+      <a href="services.html">View Services</a>
+    </div>
+
+    <!-- Music & Motivation -->
+    <div class="section">
+      <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/music-1850382_960_720.jpg" alt="Music">
       <h2>Music & Motivation</h2>
-      <p>Listen to motivational songs and powerful audio messages by DRAEVYNTH.</p>
-      <a href="music.html">Explore Music</a>
+      <p>Listen to powerful songs, motivational audios, and soul-lifting messages by DRAEVYNTH.</p>
+      <a href="music.html">Listen Now</a>
+    </div>
+
+    <!-- Shop (Physical & Digital Products) -->
+    <div class="section">
+      <img src="https://cdn.pixabay.com/photo/2017/10/30/05/51/wallet-2900404_960_720.jpg" alt="Shop">
+      <h2>Shop</h2>
+      <p>Buy physical and digital products including books, audio packs, and branding tools.</p>
+      <a href="shop.html">Visit Shop</a>
     </div>
 
     <!-- Free Resources -->
     <div class="section">
-      <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765" alt="Free Resources">
+      <img src="https://cdn.pixabay.com/photo/2016/02/19/10/00/office-1209640_960_720.jpg" alt="Free Resources">
       <h2>Free Resources</h2>
-      <p>Download free guides, PDFs, and tools to start or grow your brand today.</p>
-      <a href="resources.html">Download Free</a>
+      <p>Download helpful business guides, branding kits, and templates for free.</p>
+      <a href="resources.html">Get Free Tools</a>
     </div>
   </div>
-
-  <footer>
-    &copy; 2025 DRAEVYNTH. All rights reserved.
-  </footer>
-
 </body>
 </html>
