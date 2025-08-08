@@ -1,114 +1,201 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
+     <!DOCTYPE html><html lang="en"><head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DRAEVYNTH | Official Website</title>
+  <meta name="description" content="DRAEVYNTH - Premium Business Services, Online Courses, Mentorship, Digital Products, Music & More.">
+  <title>DRAEVYNTH | Silent Branding & Digital Empire</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
-      margin:0;
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #fff;
-    }
-    header {
-      background-color: #111;
-      padding: 40px;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5em;
       margin: 0;
-      color: #00ffe6;
-    }
-    header p {
-      color: #aaa;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-      gap: 20px;
-      padding: 40px;
-    }
-    .card {
-      background: #1e1e1e;
-      border-radius: 10px;
-      overflow: hidden;
-      transition: transform .2s;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,255,230,0.2);
-    }
-    .card:hover { transform: translateY(-5px); }
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-    .card h3 {
-      margin: 15px 0 10px;
-    }
-    .card a {
-      display: inline-block;
-      margin: 0 0 20px;
-      padding: 10px 20px;
-      background: #00ffe6;
-      color: #000;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #111;
-      font-size: 0.9em;
-      color: #777;
-    }
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0a;
+      color: #f2f2f2;
+    }header {
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+nav a {
+  color: #f2f2f2;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #00ffff;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(90deg, #0f0f0f, #1a1a1a);
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.product {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.02);
+}
+
+.product img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product .content {
+  padding: 20px;
+}
+
+.product h3 {
+  margin: 0 0 10px;
+}
+
+.product p {
+  color: #bbb;
+}
+
+.product a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about {
+  background: #121212;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  color: #888;
+}
+
   </style>
-</head>
-<body>
-
-<header>
-  <h1>DRAEVYNTH</h1>
-  <p>Silent Branding • Online Business • Mentorship • Music</p>
-</header>
-
-<div class="grid">
-  <div class="card">
-    <img src="https://cdn.pixabay.com/photo/2016/03/26/22/13/education-1280965_1280.jpg" alt="Courses">
-    <h3>Silent Branding Masterclass</h3>
-    <a href="courses.html">View Course</a>
-  </div>
-  <div class="card">
-    <img src="https://cdn.pixabay.com/photo/2017/04/03/16/02/mentor-2191955_1280.jpg" alt="Mentorship">
+</head><body>
+  <header>
+    <h1>DRAEVYNTH</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#courses">Courses</a>
+      <a href="#mentorship">Mentorship</a>
+      <a href="#services">Services</a>
+      <a href="#music">Music</a>
+      <a href="#shop">Shop</a>
+      <a href="#resources">Free Resources</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>  <section class="hero">
+    <h2>Build Your Digital Empire Silently</h2>
+    <p>Professional branding, courses, mentorship, and tools to help you create, grow, and profit from your business online — without making noise.</p>
+  </section>  <section class="products" id="courses">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1581091870622-2b1d84bde6c4" alt="Silent Branding Masterclass">
+      <div class="content">
+        <h3>Silent Branding Masterclass</h3>
+        <p>Learn how to build powerful brands that sell without loud marketing. Silent but effective.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div><div class="product" id="mentorship">
+  <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70" alt="1-on-1 Mentorship">
+  <div class="content">
     <h3>1-on-1 Mentorship</h3>
-    <a href="mentorship.html">Join Mentorship</a>
-  </div>
-  <div class="card">
-    <img src="https://cdn.pixabay.com/photo/2016/03/26/22/13/business-1280964_1280.jpg" alt="Services">
-    <h3>Branding & Strategy Services</h3>
-    <a href="services.html">View Services</a>
-  </div>
-  <div class="card">
-    <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/music-1850382_1280.jpg" alt="Music">
-    <h3>Music & Motivation</h3>
-    <a href="music.html">Listen Now</a>
-  </div>
-  <div class="card">
-    <img src="https://cdn.pixabay.com/photo/2017/10/30/05/51/wallet-2900404_1280.jpg" alt="Shop">
-    <h3>Shop Products</h3>
-    <a href="shop.html">Start Shopping</a>
-  </div>
-  <div class="card">
-    <img src="https://cdn.pixabay.com/photo/2016/02/19/10/00/office-1209640_1280.jpg" alt="Free Resources">
-    <h3>Free PDF Resources</h3>
-    <a href="free-resources.html">Download Now</a>
+    <p>Work directly with DRAEVYNTH to design your brand and monetize your skill or business idea.</p>
+    <a href="#">Start Now</a>
   </div>
 </div>
 
-<footer>
-  © 2025 DRAEVYNTH. All rights reserved.
-</footer>
+<div class="product" id="services">
+  <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d1" alt="Business Services">
+  <div class="content">
+    <h3>Business Services</h3>
+    <p>Get expert help with branding, naming, strategy, design, and digital transformation.</p>
+    <a href="#">Explore</a>
+  </div>
+</div>
 
-</body>
-</html>  
+<div class="product" id="music">
+  <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91" alt="Music & Motivation">
+  <div class="content">
+    <h3>Music & Motivation</h3>
+    <p>Listen to exclusive motivational music and voice packs created by DRAEVYNTH.</p>
+    <a href="#">Play Now</a>
+  </div>
+</div>
+
+<div class="product" id="shop">
+  <img src="https://images.unsplash.com/photo-1606811843932-c4e17ef6f5e1" alt="Shop">
+  <div class="content">
+    <h3>Shop Products</h3>
+    <p>Get physical and digital items to upgrade your brand and income online.</p>
+    <a href="#">Browse Store</a>
+  </div>
+</div>
+
+<div class="product" id="resources">
+  <img src="https://images.unsplash.com/photo-1603575448372-2fdd3e07f68b" alt="Free Resources">
+  <div class="content">
+    <h3>Free Downloads</h3>
+    <p>Start your journey with free business tools, guides, and silent branding resources.</p>
+    <a href="#">Download Free</a>
+  </div>
+</div>
+
+  </section>  <section class="about" id="about">
+    <h2>About DRAEVYNTH</h2>
+    <p>I am DRAEVYNTH – a silent branding strategist and online business mentor. I help people build powerful brands, launch digital businesses, and grow silently. My mission is to teach you how to make money online with strategy, not noise. Everything I do is built on wisdom, clarity, and deep design thinking.</p>
+  </section>  <footer>
+    <p>&copy; 2025 DRAEVYNTH. All Rights Reserved.</p>
+  </footer>
+</body></html>
+  
