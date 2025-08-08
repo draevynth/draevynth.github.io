@@ -1,128 +1,67 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DRAEVYNTH | Official Website</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0a0a0a;
-      color: #fff;
-    }
-    header {
-      padding: 40px;
-      text-align: center;
-      background: #111;
-    }
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 18px;
-      color: #aaa;
-    }
-    .section-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      padding: 40px;
-    }
-    .product-card {
-      background-color: #1a1a1a;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 0 10px #000;
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    .product-card:hover {
-      transform: scale(1.03);
-    }
-    .product-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .product-card h3 {
-      font-size: 20px;
-      margin: 15px 0 10px;
-    }
-    .product-card a {
-      display: inline-block;
-      margin: 10px 0 20px;
-      padding: 10px 20px;
-      background: #e91e63;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #111;
-      color: #aaa;
-    }
+    body { margin:0; font-family: Arial; background: #0a0a0a; color: #fff; }
+    header { padding: 40px; text-align: center; background: #111; }
+    header h1 { font-size: 2.5rem; margin: 0; color: #00ffff; }
+    header p { color: #aaa; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 30px; padding: 40px; }
+    .card { background:#1a1a1a; border-radius:12px; overflow:hidden; box-shadow:0 0 10px rgba(0,255,255,0.2); text-align:center; }
+    .card img { width:100%; height:200px; object-fit:cover; }
+    .card h3 { margin:15px 0 10px; }
+    .card a { display:inline-block; margin-bottom:20px; padding:10px 20px; background:#00ffff; color:#000; text-decoration:none; border-radius:6px; }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>DRAEVYNTH</h1>
-    <p>Where strategy meets mystery – Shop, Learn, Grow</p>
-  </header>
+<header>
+  <h1>DRAEVYNTH (Live Now)</h1>
+  <p>Silent Branding • Online Business • Mentorship • Music</p>
+</header>
 
-  <div class="section-grid">
-    <!-- Courses -->
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1581092334654-1e7c18cda2b2?auto=format&fit=crop&w=800&q=80" alt="Courses">
-      <h3>Silent Branding Masterclass</h3>
-      <a href="courses.html">Explore Course</a>
-    </div>
-
-    <!-- Mentorship -->
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1587614382346-4ec07e13c7b8?auto=format&fit=crop&w=800&q=80" alt="Mentorship">
-      <h3>1-on-1 Mentorship Program</h3>
-      <a href="mentorship.html">Join Mentorship</a>
-    </div>
-
-    <!-- Services -->
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437d7?auto=format&fit=crop&w=800&q=80" alt="Services">
-      <h3>Branding & Business Services</h3>
-      <a href="services.html">View Services</a>
-    </div>
-
-    <!-- Music -->
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Music">
-      <h3>Music & Motivation</h3>
-      <a href="music.html">Listen Now</a>
-    </div>
-
-    <!-- Shop -->
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1607082349566-1873426bce4d?auto=format&fit=crop&w=800&q=80" alt="Shop">
-      <h3>Shop Products</h3>
-      <a href="shop.html">Start Shopping</a>
-    </div>
-
-    <!-- Free Resources -->
-    <div class="product-card">
-      <img src="https://images.unsplash.com/photo-1573496130141-209d200cebd6?auto=format&fit=crop&w=800&q=80" alt="Free Resources">
-      <h3>Free PDF Downloads</h3>
-      <a href="free-resources.html">Get Resources</a>
-    </div>
+<div class="grid">
+  <!-- Courses -->
+  <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2016/03/26/22/13/education-1280965_1280.jpg" alt="Courses">
+    <h3>Silent Branding Masterclass</h3>
+    <a href="courses.html">View Course</a>
   </div>
-
-  <footer>
-    © 2025 DRAEVYNTH. All rights reserved.
-  </footer>
+  <!-- Mentorship -->
+  <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2017/04/03/16/02/mentor-2191955_1280.jpg" alt="Mentorship">
+    <h3>1-on-1 Mentorship</h3>
+    <a href="mentorship.html">Join Mentorship</a>
+  </div>
+  <!-- Services -->
+  <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2016/03/26/22/13/business-1280964_1280.jpg" alt="Services">
+    <h3>Branding & Strategy Services</h3>
+    <a href="services.html">View Services</a>
+  </div>
+  <!-- Music -->
+  <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2016/11/23/14/45/music-1850382_1280.jpg" alt="Music">
+    <h3>Music & Motivation</h3>
+    <a href="music.html">Listen Now</a>
+  </div>
+  <!-- Shop -->
+  <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2017/10/30/05/51/wallet-2900404_1280.jpg" alt="Shop">
+    <h3>Shop Products</h3>
+    <a href="shop.html">Visit Shop</a>
+  </div>
+  <!-- Free Resources -->
+  <div class="card">
+    <img src="https://cdn.pixabay.com/photo/2016/02/19/10/00/office-1209640_1280.jpg" alt="Free Resources">
+    <h3>Free PDF Resources</h3>
+    <a href="free-resources.html">Download Now</a>
+  </div>
+</div>
 
 </body>
-</html>          
-
-
+</html>
+  
