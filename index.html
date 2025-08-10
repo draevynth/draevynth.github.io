@@ -1,4 +1,4 @@
-        <!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -7,68 +7,38 @@
   <meta name="description" content="DRAEVYNTH — Courses, Mentorship, Services, Music, Shop & Free Resources" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{
-      --accent:#00ffd5;
-      --muted:#9aa;
-      --bg:#070707;
-      --card:#121212;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family:Rubik,system-ui,Arial;
-      background:var(--bg);
-      color:#fff;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-    }
-    /* header */
-    .site-header{
-      display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:#0b0b0b;position:sticky;top:0;z-index:120;border-bottom:1px solid rgba(255,255,255,0.03)
-    }
+    :root{--accent:#00ffd5;--muted:#9aa;--bg:#070707;--card:#121212}
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font-family:Rubik,system-ui,Arial;background:var(--bg);color:#fff;-webkit-font-smoothing:antialiased}
+    .site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:#0b0b0b;position:sticky;top:0;z-index:120;border-bottom:1px solid rgba(255,255,255,0.03)}
     .brand{font-weight:700;color:var(--accent);letter-spacing:1px}
     nav{display:flex;gap:12px;flex-wrap:wrap}
     nav a{color:#ddd;text-decoration:none;padding:8px;border-radius:8px;font-weight:500}
     nav a:hover{color:var(--accent)}
-    .burger{display:none}
-    /* hero */
-    .hero{
-      background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80');
-      background-size:cover;background-position:center;padding:80px 20px;text-align:center;
-    }
+    .hero{background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80');background-size:cover;background-position:center;padding:80px 20px;text-align:center}
     .hero .wrap{max-width:1100px;margin:0 auto;background:linear-gradient(180deg,rgba(0,0,0,0.35),rgba(0,0,0,0.6));padding:40px;border-radius:12px}
     .hero h1{font-size:34px;color:var(--accent);margin-bottom:10px}
     .hero p{color:#ddd;max-width:900px;margin:0 auto 18px}
     .cta{display:inline-block;background:var(--accent);color:#000;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:700}
-    /* sections */
     .section{padding:48px 18px}
     .section .inner{max-width:1100px;margin:0 auto}
     .section h2{color:var(--accent);margin:0 0 18px;font-size:22px}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-    .card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.6);transition:transform .2s ease}
+    .card{background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.6);transition:transform .2s}
     .card:hover{transform:translateY(-6px)}
     .card img{width:100%;height:160px;object-fit:cover;display:block}
     .card-body{padding:14px}
     .card-body h3{margin:0 0 8px;font-size:18px;color:#fff}
     .card-body p{margin:0 0 12px;color:var(--muted);font-size:14px}
     .card-body .btn{display:inline-block;background:var(--accent);color:#000;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
-    /* about/testimonials */
     .about p{color:#cfcfcf}
     .testimonial{background:#111;padding:16px;border-radius:10px;color:#ddd}
-    /* newsletter */
-    .newsletter {text-align:center}
+    .newsletter{text-align:center}
     .subscribe-inline{display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap}
     .subscribe-inline input{padding:12px 14px;border-radius:8px;border:1px solid #222;background:#0b0b0b;color:#fff;min-width:220px}
-    .subscribe-inline a{padding:12px 18px;background:var(--accent);color:#000;border-radius:8px;text-decoration:none;font-weight:700}
-    /* footer */
     footer{padding:28px 18px;text-align:center;color:#8d8d8d;border-top:1px solid rgba(255,255,255,0.03);margin-top:32px}
     footer .icons a{color:var(--accent);margin:0 8px;text-decoration:none}
-    /* responsive nav */
-    @media(max-width:880px){
-      nav{display:none}
-      .burger{display:block;color:#fff}
-    }
+    @media(max-width:880px){nav{display:none}}
   </style>
 </head>
 <body>
@@ -82,12 +52,11 @@
       <a href="services.html">Services</a>
       <a href="music.html">Music</a>
       <a href="shop.html">Shop</a>
-      <a href="free-resources.html">Free Resources</a>
+      <a href="free-resources.html">Free</a>
       <a href="blog.html">Blog</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <div class="burger" id="burgerBtn">☰</div>
   </header>
 
   <main>
@@ -95,7 +64,7 @@
       <div class="wrap">
         <h1>Build a Silent Brand. Earn Loud Results.</h1>
         <p>Courses, mentorship, brand services, music & tools — everything you need to grow your online business and influence.</p>
-        <a class="cta" href="#shop">Shop Products</a>
+        <a class="cta" href="#featured">Explore</a>
       </div>
     </section>
 
@@ -108,7 +77,7 @@
             <div class="card-body">
               <h3>Silent Branding Masterclass</h3>
               <p>Step-by-step course that teaches branding that converts.</p>
-              <a class="btn" href="course-silent-branding.html">View / Order (WhatsApp)</a>
+              <a class="btn" href="product-silent-branding.html">View / Order (WhatsApp)</a>
             </div>
           </article>
 
@@ -136,7 +105,7 @@
     <section class="section about">
       <div class="inner">
         <h2>About DRAEVYNTH</h2>
-        <p>We help creators, entrepreneurs and quiet professionals build powerful brands and monetise online. Courses, mentorship and done-for-you services combined with motivational music and tools.</p>
+        <p>We help creators, entrepreneurs and quiet professionals build powerful brands and monetise online. Courses, mentorship and done-for-you services combined with motivational music and resources.</p>
       </div>
     </section>
 
@@ -155,7 +124,7 @@
         <h2>Join the Tribe — Newsletter</h2>
         <p>Get tips, free PDFs, and early access to drops.</p>
 
-        <!-- subscribe inline opens subscribe.html (which embeds your Google Form) -->
+        <!-- Inline email + link to full subscribe page with Google Form -->
         <div class="subscribe-inline">
           <input type="email" placeholder="Your email (optional)" aria-label="email">
           <a href="subscribe.html" class="btn">Subscribe</a>
@@ -176,13 +145,10 @@
   </footer>
 
   <script>
-    // mobile nav
+    // Small mobile nav toggle
     const burger = document.getElementById('burgerBtn');
     const nav = document.getElementById('mainNav');
-    burger && burger.addEventListener('click', ()=> {
-      if(nav.style.display === 'flex'){ nav.style.display = 'none' }
-      else { nav.style.display = 'flex'; nav.style.flexDirection='column'; nav.style.position='absolute'; nav.style.right='20px'; nav.style.top='60px'; nav.style.background='#0b0b0b'; nav.style.padding='12px'; nav.style.borderRadius='8px' }
-    });
+    // (burger element not shown on large layouts) - simple progressive enhancement
   </script>
 </body>
 </html>
