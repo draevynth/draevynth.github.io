@@ -1,95 +1,35 @@
-    <!DOCTYPE html>
+        
+  <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Contact DRAEVYNTH for mentorship, services, music, or business inquiries" />
-  <title>DRAEVYNTH | Contact</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0a0a0a;
-      color: #f0f0f0;
-    }
-    header {
-      background-color: #111;
-      padding: 2rem;
-      text-align: center;
-      border-bottom: 1px solid #333;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #aaa;
-    }
-    .contact-section {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 2rem;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .contact-info {
-      flex: 1 1 350px;
-      max-width: 400px;
-    }
-    .contact-info h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    .contact-info p {
-      line-height: 1.6;
-      margin-bottom: 1rem;
-      color: #ccc;
-    }
-    .contact-info a {
-      color: #00ffcc;
-      text-decoration: none;
-    }
-    .contact-image {
-      flex: 1 1 350px;
-    }
-    .contact-image img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem;
-      background-color: #111;
-      font-size: 0.9rem;
-      color: #666;
-      border-top: 1px solid #333;
-    }
-  </style>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — DRAEVYNTH</title>
+<style>
+  body{margin:0;font-family:system-ui,Arial;background:#0c0c0c;color:#fff}
+  .wrap{max-width:900px;margin:28px auto;padding:20px}
+  h1{color:#00ffd5}
+  .card{background:#111;padding:18px;border-radius:10px}
+  label{display:block;margin-top:10px;color:#cfcfcf}
+  input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #222;background:#0b0b0b;color:#fff;margin-top:6px}
+  button{margin-top:12px;padding:10px 14px;background:#00ffd5;color:#000;border:none;border-radius:8px;font-weight:700}
+  .wh{display:inline-block;margin-top:12px;padding:10px 14px;background:#25D366;color:#fff;border-radius:8px;text-decoration:none}
+</style>
 </head>
 <body>
-  <header>
+  <div class="wrap">
     <h1>Contact DRAEVYNTH</h1>
-    <p>Let's connect and build something powerful</p>
-  </header>
+    <p style="color:#cfcfcf">Email: <a href="mailto:draevynth@gmail.com" style="color:#00ffd5">draevynth@gmail.com</a></p>
 
-  <section class="contact-section">
-    <div class="contact-info">
-      <h2>Get in Touch</h2>
-      <p>For inquiries, collaborations, mentorship, or services, feel free to reach out through the channels below.</p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/2347011729564" target="_blank">+2347011729564</a></p>
-      <p><strong>Email:</strong> <a href="mailto:draevynthofficial@gmail.com">draevynthofficial@gmail.com</a></p>
-      <p><strong>Socials:</strong> TikTok | YouTube | Instagram (@draevynth)</p>
+    <div class="card">
+      <form action="mailto:draevynth@gmail.com" method="post" enctype="text/plain">
+        <label>Your name</label><input type="text" name="name" required>
+        <label>Your email</label><input type="email" name="email" required>
+        <label>Message</label><textarea name="message" rows="6" required></textarea>
+        <button type="submit">Send email</button>
+      </form>
+
+      <a class="wh" href="https://wa.me/2347011729564" target="_blank">Chat on WhatsApp</a>
     </div>
-
-    <div class="contact-image">
-      <img src="https://via.placeholder.com/600x400?text=Contact+DRAEVYNTH" alt="Contact Banner">
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 DRAEVYNTH. All rights reserved.
-  </footer>
+  </div>
 </body>
 </html>
